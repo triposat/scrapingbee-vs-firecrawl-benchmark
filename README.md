@@ -39,7 +39,7 @@ Each of the 80 static, JavaScript, protected, and PDF pages ran 3 times. Costs a
 | JavaScript | $1.27 | $3.80 | 60 of 60 | 60 of 60 |
 | Protected | $7.27 | $3.80 | 89 of 90 | 90 of 90 |
 
-On protected pages, Auto Mode settled at 1 credit on Zillow and Foot Locker and at 10 on Walmart, so those 3 sites cost less on ScrapingBee; on the other 3 it moved higher only as far as each site required.
+On protected pages, Auto Mode settled at 1 credit on Zillow and Foot Locker and at 10 on Walmart, so those 3 sites cost less on ScrapingBee. On the other 3 sites, Auto Mode moved higher only as far as each site required.
 
 PDFs of 1 to 15 pages cost $0.25 per 1,000 successful files on ScrapingBee, which returns the original file, and $14.44 on Firecrawl, which converts each PDF to Markdown and bills per PDF page. A full pass over all 100 pages, crawl included, came to $2.55 per 1,000 successful pages on ScrapingBee and $4.86 on Firecrawl. The article covers the reasons and the trade-offs.
 
@@ -81,7 +81,7 @@ Credits come from ScrapingBee's `Spb-cost` response header and Firecrawl's `meta
 ## Files
 
 - `results/run{1,2,3}-tuned-{sb,fc}.jsonl`: one line per page with success, reason, credits, Auto Mode tier (`auto_cost`), and Firecrawl cache state.
-- `results/aggregate.json`: totals by page type. `results/chart_data.json` and the PNG file: the article's cost chart (`scripts/charts.py`).
+- `results/aggregate.json`: totals by page type. `results/chart_data.json` and the PNG file hold the article's cost chart, made by `scripts/charts.py`.
 - `results/extract_*.json`: structured extraction on 20 books.toscrape.com pages, scored against `extract_key.json`.
 - `results/md_scores.json`: Markdown quality on 10 pages (sampled-sentence recall, headings, table rows, credits).
 - `results/crawl_scrapingbee_manifest.json`, `results/crawl_firecrawl_summary.json`: the 20-page crawl.
@@ -101,7 +101,7 @@ uv run python scripts/md_test.py fc
 uv run python scripts/md_test.py score
 ```
 
-Scripts read `SB_KEY` and `FC_KEY`; the examples and the estimator read `SCRAPINGBEE_API_KEY`. `.env.example` lists all three.
+The scripts read `SB_KEY` and `FC_KEY`, and the examples and the estimator read `SCRAPINGBEE_API_KEY`. `.env.example` lists all three.
 
 ## Follow-up tests
 
