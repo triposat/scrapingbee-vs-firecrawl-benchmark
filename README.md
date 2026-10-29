@@ -39,7 +39,7 @@ Each of the 80 static, JavaScript, protected, and PDF pages ran 3 times. Costs a
 | JavaScript | $1.27 | $3.80 | 60 of 60 | 60 of 60 |
 | Protected | $7.27 | $3.80 | 89 of 90 | 90 of 90 |
 
-On protected pages, Auto Mode settled at 1 credit on Zillow and Foot Locker and at 10 on Walmart, so those 3 sites cost less on ScrapingBee. On the other 3 sites, Auto Mode moved higher only as far as each site required.
+On protected pages, Auto Mode used the 1-credit tier on Zillow and Foot Locker and the 10-credit tier on Walmart, so those 3 sites cost less on ScrapingBee. On the other 3 sites, Auto Mode moved higher only as far as each site required.
 
 PDFs of 1 to 15 pages cost $0.25 per 1,000 successful files on ScrapingBee, which returns the original file, and $14.44 on Firecrawl, which converts each PDF to Markdown and bills per PDF page. A full pass over all 100 pages, crawl included, came to $2.55 per 1,000 successful pages on ScrapingBee and $4.86 on Firecrawl. The article covers the reasons and the trade-offs.
 
