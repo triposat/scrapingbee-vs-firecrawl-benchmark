@@ -1,0 +1,353 @@
+[
+ {
+  "id": "protected-etsy-1",
+  "site": "etsy",
+  "status": 200,
+  "credits": 25,
+  "auto": "25",
+  "bytes": 17011,
+  "jsonld_prices": [],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-etsy-2",
+  "site": "etsy",
+  "status": 200,
+  "credits": 25,
+  "auto": "25",
+  "bytes": 15564,
+  "jsonld_prices": [],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-etsy-3",
+  "site": "etsy",
+  "status": 200,
+  "credits": 25,
+  "auto": "25",
+  "bytes": 10241,
+  "jsonld_prices": [],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-etsy-4",
+  "site": "etsy",
+  "status": 200,
+  "credits": 25,
+  "auto": "25",
+  "bytes": 11878,
+  "jsonld_prices": [],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-etsy-5",
+  "site": "etsy",
+  "status": 200,
+  "credits": 25,
+  "auto": "25",
+  "bytes": 15775,
+  "jsonld_prices": [],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-zillow-1",
+  "site": "zillow",
+  "status": 200,
+  "credits": 1,
+  "auto": "1",
+  "bytes": 404792,
+  "jsonld_prices": [
+   2590000.0
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-zillow-2",
+  "site": "zillow",
+  "status": 200,
+  "credits": 1,
+  "auto": "1",
+  "bytes": 244525,
+  "jsonld_prices": [
+   1418800.0
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-zillow-3",
+  "site": "zillow",
+  "status": 200,
+  "credits": 1,
+  "auto": "1",
+  "bytes": 385315,
+  "jsonld_prices": [
+   1070000.0
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-zillow-4",
+  "site": "zillow",
+  "status": 200,
+  "credits": 1,
+  "auto": "1",
+  "bytes": 397735,
+  "jsonld_prices": [
+   2250000.0
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-zillow-5",
+  "site": "zillow",
+  "status": 200,
+  "credits": 1,
+  "auto": "1",
+  "bytes": 373802,
+  "jsonld_prices": [
+   4950000.0
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-homedepot-1",
+  "site": "homedepot",
+  "status": 200,
+  "credits": 25,
+  "auto": "25",
+  "bytes": 12458,
+  "jsonld_prices": [
+   239.0
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-homedepot-2",
+  "site": "homedepot",
+  "status": 200,
+  "credits": 75,
+  "auto": "75",
+  "bytes": 9879,
+  "jsonld_prices": [
+   59.99
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-homedepot-3",
+  "site": "homedepot",
+  "status": 200,
+  "credits": 25,
+  "auto": "25",
+  "bytes": 12818,
+  "jsonld_prices": [
+   179.0
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-homedepot-4",
+  "site": "homedepot",
+  "status": 200,
+  "credits": 25,
+  "auto": "25",
+  "bytes": 7909,
+  "jsonld_prices": [
+   29.97
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-homedepot-5",
+  "site": "homedepot",
+  "status": 200,
+  "credits": 25,
+  "auto": "25",
+  "bytes": 12092,
+  "jsonld_prices": [
+   49.97
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-stockx-1",
+  "site": "stockx",
+  "status": 500,
+  "credits": 0,
+  "auto": "0",
+  "bytes": 376,
+  "jsonld_prices": [],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-stockx-2",
+  "site": "stockx",
+  "status": 500,
+  "credits": 0,
+  "auto": "0",
+  "bytes": 374,
+  "jsonld_prices": [],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-stockx-3",
+  "site": "stockx",
+  "status": 500,
+  "credits": 0,
+  "auto": "0",
+  "bytes": 321,
+  "jsonld_prices": [],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-stockx-4",
+  "site": "stockx",
+  "status": 200,
+  "credits": 25,
+  "auto": "25",
+  "bytes": 380512,
+  "jsonld_prices": [
+   36.0,
+   46.0,
+   59.0
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-stockx-5",
+  "site": "stockx",
+  "status": 200,
+  "credits": 25,
+  "auto": "25",
+  "bytes": 381069,
+  "jsonld_prices": [
+   69.0,
+   69.0,
+   90.0
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-footlocker-1",
+  "site": "footlocker",
+  "status": 200,
+  "credits": 1,
+  "auto": "1",
+  "bytes": 5818,
+  "jsonld_prices": [
+   99.99,
+   115.0,
+   115.0
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-footlocker-2",
+  "site": "footlocker",
+  "status": 200,
+  "credits": 1,
+  "auto": "1",
+  "bytes": 6991,
+  "jsonld_prices": [
+   125.0,
+   125.0,
+   125.0
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-footlocker-3",
+  "site": "footlocker",
+  "status": 200,
+  "credits": 1,
+  "auto": "1",
+  "bytes": 13828,
+  "jsonld_prices": [
+   100.0,
+   90.0,
+   100.0
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-footlocker-4",
+  "site": "footlocker",
+  "status": 200,
+  "credits": 1,
+  "auto": "1",
+  "bytes": 7675,
+  "jsonld_prices": [
+   125.0,
+   120.0,
+   115.0
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-footlocker-5",
+  "site": "footlocker",
+  "status": 200,
+  "credits": 1,
+  "auto": "1",
+  "bytes": 4009,
+  "jsonld_prices": [
+   89.99
+  ],
+  "nextdata_price": null
+ },
+ {
+  "id": "protected-walmart-1",
+  "site": "walmart",
+  "status": 200,
+  "credits": 10,
+  "auto": "10",
+  "bytes": 457381,
+  "jsonld_prices": [],
+  "nextdata_price": null,
+  "note": "first-match regex bug; corrected values in structured-price-scan-walmart.json"
+ },
+ {
+  "id": "protected-walmart-2",
+  "site": "walmart",
+  "status": 200,
+  "credits": 10,
+  "auto": "10",
+  "bytes": 562652,
+  "jsonld_prices": [],
+  "nextdata_price": null,
+  "note": "first-match regex bug; corrected values in structured-price-scan-walmart.json"
+ },
+ {
+  "id": "protected-walmart-3",
+  "site": "walmart",
+  "status": 200,
+  "credits": 10,
+  "auto": "10",
+  "bytes": 501634,
+  "jsonld_prices": [],
+  "nextdata_price": null,
+  "note": "first-match regex bug; corrected values in structured-price-scan-walmart.json"
+ },
+ {
+  "id": "protected-walmart-4",
+  "site": "walmart",
+  "status": 200,
+  "credits": 10,
+  "auto": "10",
+  "bytes": 431479,
+  "jsonld_prices": [],
+  "nextdata_price": null,
+  "note": "first-match regex bug; corrected values in structured-price-scan-walmart.json"
+ },
+ {
+  "id": "protected-walmart-5",
+  "site": "walmart",
+  "status": 200,
+  "credits": 10,
+  "auto": "10",
+  "bytes": 430448,
+  "jsonld_prices": [],
+  "nextdata_price": null,
+  "note": "first-match regex bug; corrected values in structured-price-scan-walmart.json"
+ }
+]

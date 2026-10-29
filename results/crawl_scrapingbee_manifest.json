@@ -1,0 +1,142 @@
+{
+  "https://www.python-httpx.org/contributing/": {
+    "file": "1.md",
+    "fetched_at": "2026-10-26T11:50:21.770902+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 909
+  },
+  "https://www.python-httpx.org/http2/": {
+    "file": "2.md",
+    "fetched_at": "2026-10-26T11:50:21.863906+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 1026
+  },
+  "https://www.python-httpx.org/environment_variables/": {
+    "file": "3.md",
+    "fetched_at": "2026-10-26T11:50:21.878183+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 1043
+  },
+  "https://www.python-httpx.org/advanced/event-hooks/": {
+    "file": "4.md",
+    "fetched_at": "2026-10-26T11:50:21.986951+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 1146
+  },
+  "https://www.python-httpx.org/troubleshooting/": {
+    "file": "5.md",
+    "fetched_at": "2026-10-26T11:50:22.053018+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 1212
+  },
+  "https://www.python-httpx.org/advanced/extensions/": {
+    "file": "6.md",
+    "fetched_at": "2026-10-26T11:50:22.068676+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 1184
+  },
+  "https://www.python-httpx.org/advanced/ssl/": {
+    "file": "7.md",
+    "fetched_at": "2026-10-26T11:50:22.075225+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 1228
+  },
+  "https://www.python-httpx.org/": {
+    "file": "8.md",
+    "fetched_at": "2026-10-26T11:50:22.105484+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 1276
+  },
+  "https://www.python-httpx.org/exceptions/": {
+    "file": "9.md",
+    "fetched_at": "2026-10-26T11:50:22.109710+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 1260
+  },
+  "https://www.python-httpx.org/code_of_conduct/": {
+    "file": "10.md",
+    "fetched_at": "2026-10-26T11:50:22.213609+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 1371
+  },
+  "https://www.python-httpx.org/logging/": {
+    "file": "11.md",
+    "fetched_at": "2026-10-26T11:50:22.241104+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 1380
+  },
+  "https://www.python-httpx.org/compatibility/": {
+    "file": "12.md",
+    "fetched_at": "2026-10-26T11:50:22.282753+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 1404
+  },
+  "https://www.python-httpx.org/api/": {
+    "file": "13.md",
+    "fetched_at": "2026-10-26T11:50:22.322198+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 1290
+  },
+  "https://www.python-httpx.org/img/speakeasy.png": {
+    "file": "14.md",
+    "fetched_at": "2026-10-26T11:50:22.344443+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 460
+  },
+  "https://www.python-httpx.org/advanced/timeouts/": {
+    "file": "15.md",
+    "fetched_at": "2026-10-26T11:50:22.787776+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 906
+  },
+  "https://www.python-httpx.org/advanced/resource-limits/": {
+    "file": "16.md",
+    "fetched_at": "2026-10-26T11:50:22.893470+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 2045
+  },
+  "https://www.python-httpx.org/advanced/transports/": {
+    "file": "17.md",
+    "fetched_at": "2026-10-26T11:50:22.897015+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 823
+  },
+  "https://www.python-httpx.org/advanced/authentication/": {
+    "file": "18.md",
+    "fetched_at": "2026-10-26T11:50:22.962103+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 2121
+  },
+  "https://www.python-httpx.org/advanced/proxies/": {
+    "file": "19.md",
+    "fetched_at": "2026-10-26T11:50:23.045722+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 2201
+  },
+  "https://www.python-httpx.org/advanced/clients/": {
+    "file": "20.md",
+    "fetched_at": "2026-10-26T11:50:23.051826+00:00",
+    "http_status": 200,
+    "credits_used": 1,
+    "latency_ms": 2161
+  }
+}

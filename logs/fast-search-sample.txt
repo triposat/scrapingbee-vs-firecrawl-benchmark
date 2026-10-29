@@ -1,0 +1,4 @@
+# 2026-10-29. One Fast Search request: GET https://app.scrapingbee.com/api/v1/fast_search?search=python+web+scraping+library&country_code=us
+spb-cost: 10
+keys: answer_box, organic, people_also_ask, related_searches, search_parameters, status, top_stories, url
+organic results: 8 | related searches: 8 | answer_box present: False

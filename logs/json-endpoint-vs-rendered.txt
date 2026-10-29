@@ -1,0 +1,6 @@
+# 2026-10-29, ScrapingBee API, quotes.toscrape.com
+# Same data two ways: the page's JSON endpoint without rendering, and the rendered infinite-scroll page.
+GET url=https://quotes.toscrape.com/api/quotes?page=1  render_js=false
+  -> HTTP 200, spb-cost: 1, 10 quotes, first: "The world as we have created it is a process of our thinking..." (Albert Einstein)
+GET url=https://quotes.toscrape.com/scroll  js_scenario={"instructions":[{"wait_for":".quote"}]}
+  -> HTTP 200, spb-cost: 5, 10 div.quote elements

@@ -1,0 +1,7 @@
+# Direct request (no proxy) to each protected site's homepage, 2026-10-26T12:54:28Z. Status, size, anti-bot headers/cookies, and challenge markers in the body.
+https://www.etsy.com/        403 776B | server: DataDome set-cookie: datadome x-datadome | body: captcha-delivery 
+https://www.zillow.com/      403 5776B | x-px-blocked | body: PerimeterX px-captcha 
+https://www.homedepot.com/   403 365B | server: AkamaiGHost | body: Access Denied 
+https://stockx.com/          403 76301B | server: cloudflare cf-ray | body: 
+https://www.footlocker.com/  200 951233B | | body: KPSDK kpsdk 
+https://www.walmart.com/     200 444785B | | body: perimeterX perimeterx 

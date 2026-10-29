@@ -1,0 +1,8 @@
+domain                       sampled usable tiers seen credits/usable pages/month credits/month
+books.toscrape.com                 2      2        1-1            1.0      50,000        50,000
+www.zillow.com                     2      2        1-1            1.0      20,000        20,000
+www.homedepot.com                  2      2      25-25           25.0       5,000       125,000
+www.walmart.com                    2      2      10-10           10.0      20,000       200,000
+
+Estimated credits a month: 395,000
+Smallest plan that fits: Startup ($99, 1,000,000 credits, 40% used)

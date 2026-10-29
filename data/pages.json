@@ -1,0 +1,818 @@
+[
+ {
+  "id": "static-books-1",
+  "type": "static",
+  "url": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+  "must": [
+   "A Light in the Attic"
+  ]
+ },
+ {
+  "id": "static-books-2",
+  "type": "static",
+  "url": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html",
+  "must": [
+   "Tipping the Velvet"
+  ]
+ },
+ {
+  "id": "static-books-3",
+  "type": "static",
+  "url": "https://books.toscrape.com/catalogue/soumission_998/index.html",
+  "must": [
+   "Soumission"
+  ]
+ },
+ {
+  "id": "static-books-4",
+  "type": "static",
+  "url": "https://books.toscrape.com/catalogue/sharp-objects_997/index.html",
+  "must": [
+   "Sharp Objects"
+  ]
+ },
+ {
+  "id": "static-books-5",
+  "type": "static",
+  "url": "https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html",
+  "must": [
+   "Sapiens: A Brief History of Humankind"
+  ]
+ },
+ {
+  "id": "static-books-6",
+  "type": "static",
+  "url": "https://books.toscrape.com/catalogue/the-requiem-red_995/index.html",
+  "must": [
+   "The Requiem Red"
+  ]
+ },
+ {
+  "id": "static-books-7",
+  "type": "static",
+  "url": "https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html",
+  "must": [
+   "The Dirty Little Secrets of Getting Your Dream Job"
+  ]
+ },
+ {
+  "id": "static-books-8",
+  "type": "static",
+  "url": "https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html",
+  "must": [
+   "The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull"
+  ]
+ },
+ {
+  "id": "static-books-9",
+  "type": "static",
+  "url": "https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html",
+  "must": [
+   "The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics"
+  ]
+ },
+ {
+  "id": "static-books-10",
+  "type": "static",
+  "url": "https://books.toscrape.com/catalogue/the-black-maria_991/index.html",
+  "must": [
+   "The Black Maria"
+  ]
+ },
+ {
+  "id": "static-quotes-1",
+  "type": "static",
+  "url": "https://quotes.toscrape.com/page/1/",
+  "must": [
+   "The world as we have created it is a pro",
+   "Albert Einstein"
+  ]
+ },
+ {
+  "id": "static-quotes-2",
+  "type": "static",
+  "url": "https://quotes.toscrape.com/page/2/",
+  "must": [
+   "This life is what you make it. No matter",
+   "Marilyn Monroe"
+  ]
+ },
+ {
+  "id": "static-quotes-3",
+  "type": "static",
+  "url": "https://quotes.toscrape.com/page/3/",
+  "must": [
+   "I love you without knowing how, or when,",
+   "Pablo Neruda"
+  ]
+ },
+ {
+  "id": "static-quotes-4",
+  "type": "static",
+  "url": "https://quotes.toscrape.com/page/4/",
+  "must": [
+   "The more that you read, the more things ",
+   "Dr. Seuss"
+  ]
+ },
+ {
+  "id": "static-quotes-5",
+  "type": "static",
+  "url": "https://quotes.toscrape.com/page/5/",
+  "must": [
+   "A reader lives a thousand lives before h",
+   "George R.R. Martin"
+  ]
+ },
+ {
+  "id": "static-quotes-6",
+  "type": "static",
+  "url": "https://quotes.toscrape.com/page/6/",
+  "must": [
+   "There is nothing I would not do for thos",
+   "Jane Austen"
+  ]
+ },
+ {
+  "id": "static-quotes-7",
+  "type": "static",
+  "url": "https://quotes.toscrape.com/page/7/",
+  "must": [
+   "That's the problem with drinking, I thou",
+   "Charles Bukowski"
+  ]
+ },
+ {
+  "id": "static-quotes-8",
+  "type": "static",
+  "url": "https://quotes.toscrape.com/page/8/",
+  "must": [
+   "If I had a flower for every time I thoug",
+   "Alfred Tennyson"
+  ]
+ },
+ {
+  "id": "static-quotes-9",
+  "type": "static",
+  "url": "https://quotes.toscrape.com/page/9/",
+  "must": [
+   "Anyone who has never made a mistake has ",
+   "Albert Einstein"
+  ]
+ },
+ {
+  "id": "static-quotes-10",
+  "type": "static",
+  "url": "https://quotes.toscrape.com/page/10/",
+  "must": [
+   "The truth.\" Dumbledore sighed. \"It is a ",
+   "J.K. Rowling"
+  ]
+ },
+ {
+  "id": "js-1",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js/page/1/",
+  "rendered": true,
+  "must": [
+   "The world as we have created it is a pro",
+   "Albert Einstein"
+  ]
+ },
+ {
+  "id": "js-2",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js/page/2/",
+  "rendered": true,
+  "must": [
+   "This life is what you make it. No matter",
+   "Marilyn Monroe"
+  ]
+ },
+ {
+  "id": "js-3",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js/page/3/",
+  "rendered": true,
+  "must": [
+   "I love you without knowing how, or when,",
+   "Pablo Neruda"
+  ]
+ },
+ {
+  "id": "js-4",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js/page/4/",
+  "rendered": true,
+  "must": [
+   "The more that you read, the more things ",
+   "Dr. Seuss"
+  ]
+ },
+ {
+  "id": "js-5",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js/page/5/",
+  "rendered": true,
+  "must": [
+   "A reader lives a thousand lives before h",
+   "George R.R. Martin"
+  ]
+ },
+ {
+  "id": "js-6",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js/page/6/",
+  "rendered": true,
+  "must": [
+   "There is nothing I would not do for thos",
+   "Jane Austen"
+  ]
+ },
+ {
+  "id": "js-7",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js/page/7/",
+  "rendered": true,
+  "must": [
+   "That's the problem with drinking, I thou",
+   "Charles Bukowski"
+  ]
+ },
+ {
+  "id": "js-8",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js/page/8/",
+  "rendered": true,
+  "must": [
+   "If I had a flower for every time I thoug",
+   "Alfred Tennyson"
+  ]
+ },
+ {
+  "id": "js-9",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js/page/9/",
+  "rendered": true,
+  "must": [
+   "Anyone who has never made a mistake has ",
+   "Albert Einstein"
+  ]
+ },
+ {
+  "id": "js-10",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js/page/10/",
+  "rendered": true,
+  "must": [
+   "The truth.\" Dumbledore sighed. \"It is a ",
+   "J.K. Rowling"
+  ]
+ },
+ {
+  "id": "js-delayed-1",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js-delayed/page/1/",
+  "rendered": true,
+  "must": [
+   "The world as we have created it is a pro",
+   "Albert Einstein"
+  ]
+ },
+ {
+  "id": "js-delayed-2",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js-delayed/page/2/",
+  "rendered": true,
+  "must": [
+   "This life is what you make it. No matter",
+   "Marilyn Monroe"
+  ]
+ },
+ {
+  "id": "js-delayed-3",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js-delayed/page/3/",
+  "rendered": true,
+  "must": [
+   "I love you without knowing how, or when,",
+   "Pablo Neruda"
+  ]
+ },
+ {
+  "id": "js-delayed-4",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js-delayed/page/4/",
+  "rendered": true,
+  "must": [
+   "The more that you read, the more things ",
+   "Dr. Seuss"
+  ]
+ },
+ {
+  "id": "js-delayed-5",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js-delayed/page/5/",
+  "rendered": true,
+  "must": [
+   "A reader lives a thousand lives before h",
+   "George R.R. Martin"
+  ]
+ },
+ {
+  "id": "js-delayed-6",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js-delayed/page/6/",
+  "rendered": true,
+  "must": [
+   "There is nothing I would not do for thos",
+   "Jane Austen"
+  ]
+ },
+ {
+  "id": "js-delayed-7",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js-delayed/page/7/",
+  "rendered": true,
+  "must": [
+   "That's the problem with drinking, I thou",
+   "Charles Bukowski"
+  ]
+ },
+ {
+  "id": "js-delayed-8",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js-delayed/page/8/",
+  "rendered": true,
+  "must": [
+   "If I had a flower for every time I thoug",
+   "Alfred Tennyson"
+  ]
+ },
+ {
+  "id": "js-delayed-9",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js-delayed/page/9/",
+  "rendered": true,
+  "must": [
+   "Anyone who has never made a mistake has ",
+   "Albert Einstein"
+  ]
+ },
+ {
+  "id": "js-delayed-10",
+  "type": "js",
+  "url": "https://quotes.toscrape.com/js-delayed/page/10/",
+  "rendered": true,
+  "must": [
+   "The truth.\" Dumbledore sighed. \"It is a ",
+   "J.K. Rowling"
+  ]
+ },
+ {
+  "id": "protected-etsy-1",
+  "type": "protected",
+  "site": "etsy",
+  "url": "https://www.etsy.com/listing/1443519508/handmade-ceramic-mug-set-of-2-stoneware",
+  "slug_tokens": [
+   "handmade",
+   "ceramic",
+   "mug",
+   "stoneware"
+  ]
+ },
+ {
+  "id": "protected-etsy-2",
+  "type": "protected",
+  "site": "etsy",
+  "url": "https://www.etsy.com/listing/4457414626/speckled-ceramic-espresso-cup-small-5oz",
+  "slug_tokens": [
+   "speckled",
+   "ceramic",
+   "espresso",
+   "cup",
+   "small"
+  ]
+ },
+ {
+  "id": "protected-etsy-3",
+  "type": "protected",
+  "site": "etsy",
+  "url": "https://www.etsy.com/listing/4397890848/personalised-black-speckle-ceramic-mug",
+  "slug_tokens": [
+   "personalised",
+   "black",
+   "speckle",
+   "ceramic",
+   "mug"
+  ]
+ },
+ {
+  "id": "protected-etsy-4",
+  "type": "protected",
+  "site": "etsy",
+  "url": "https://www.etsy.com/listing/4404419843/handmade-ceramic-mug-set-one-of-a-kind",
+  "slug_tokens": [
+   "handmade",
+   "ceramic",
+   "mug",
+   "one",
+   "kind"
+  ]
+ },
+ {
+  "id": "protected-etsy-5",
+  "type": "protected",
+  "site": "etsy",
+  "url": "https://www.etsy.com/listing/1668667853/handmade-stoneware-ceramic-mug-6oz",
+  "slug_tokens": [
+   "handmade",
+   "stoneware",
+   "ceramic",
+   "mug",
+   "6oz"
+  ]
+ },
+ {
+  "id": "protected-zillow-1",
+  "type": "protected",
+  "site": "zillow",
+  "url": "https://www.zillow.com/homedetails/221-Park-Ln-Austin-TX-78704/29458732_zpid/",
+  "slug_tokens": [
+   "Park",
+   "Austin"
+  ]
+ },
+ {
+  "id": "protected-zillow-2",
+  "type": "protected",
+  "site": "zillow",
+  "url": "https://www.zillow.com/homedetails/1410-E-3rd-St-A-Austin-TX-78702/331627622_zpid/",
+  "slug_tokens": [
+   "3rd",
+   "Austin"
+  ]
+ },
+ {
+  "id": "protected-zillow-3",
+  "type": "protected",
+  "site": "zillow",
+  "url": "https://www.zillow.com/homedetails/1117-San-Augustine-Dr-Austin-TX-78733/29345062_zpid/",
+  "slug_tokens": [
+   "San",
+   "Augustine",
+   "Austin"
+  ]
+ },
+ {
+  "id": "protected-zillow-4",
+  "type": "protected",
+  "site": "zillow",
+  "url": "https://www.zillow.com/homedetails/606-Josephine-St-Austin-TX-78704/29324871_zpid/",
+  "slug_tokens": [
+   "Josephine",
+   "Austin"
+  ]
+ },
+ {
+  "id": "protected-zillow-5",
+  "type": "protected",
+  "site": "zillow",
+  "url": "https://www.zillow.com/homedetails/1905-Wood-Acre-Ln-Austin-TX-78733/114404916_zpid/",
+  "slug_tokens": [
+   "Wood",
+   "Acre",
+   "Austin"
+  ]
+ },
+ {
+  "id": "protected-homedepot-1",
+  "type": "protected",
+  "site": "homedepot",
+  "url": "https://www.homedepot.com/p/DEWALT-20V-MAX-Cordless-Drill-Impact-2-Tool-Combo-Kit-with-2-20V-1-3Ah-Batteries-Charger-and-Bag-DCK240C2/204373168",
+  "slug_tokens": [
+   "DEWALT",
+   "20V",
+   "MAX",
+   "Cordless",
+   "Drill"
+  ]
+ },
+ {
+  "id": "protected-homedepot-2",
+  "type": "protected",
+  "site": "homedepot",
+  "url": "https://www.homedepot.com/p/BLACK-DECKER-20V-Lithium-Ion-Cordless-3-8-in-Drill-Driver-with-1-5Ah-Battery-and-Charger-BCD702C1/314718057",
+  "slug_tokens": [
+   "BLACK",
+   "DECKER",
+   "20V",
+   "Lithium",
+   "Ion"
+  ]
+ },
+ {
+  "id": "protected-homedepot-3",
+  "type": "protected",
+  "site": "homedepot",
+  "url": "https://www.homedepot.com/p/DEWALT-20V-MAX-Cordless-1-2-in-Drill-Driver-2-20V-1-3Ah-Batteries-Charger-and-Bag-DCD771C2/204279858",
+  "slug_tokens": [
+   "DEWALT",
+   "20V",
+   "MAX",
+   "Cordless",
+   "Drill"
+  ]
+ },
+ {
+  "id": "protected-homedepot-4",
+  "type": "protected",
+  "site": "homedepot",
+  "url": "https://www.homedepot.com/p/RYOBI-9-6-Volt-Ni-Cad-3-8-in-Cordless-Drill-HP696/100646505",
+  "slug_tokens": [
+   "RYOBI",
+   "Volt",
+   "Cad",
+   "Cordless",
+   "Drill"
+  ]
+ },
+ {
+  "id": "protected-homedepot-5",
+  "type": "protected",
+  "site": "homedepot",
+  "url": "https://www.homedepot.com/p/RYOBI-ONE-18V-Cordless-3-8-in-Drill-Driver-Kit-with-Compact-Battery-and-Charger-PCL201K1/326680222",
+  "slug_tokens": [
+   "RYOBI",
+   "ONE",
+   "18V",
+   "Cordless",
+   "Drill"
+  ]
+ },
+ {
+  "id": "protected-stockx-1",
+  "type": "protected",
+  "site": "stockx",
+  "url": "https://stockx.com/nike-dunk-low-retro-white-black-2021",
+  "slug_tokens": [
+   "nike",
+   "dunk",
+   "low",
+   "retro",
+   "white"
+  ]
+ },
+ {
+  "id": "protected-stockx-2",
+  "type": "protected",
+  "site": "stockx",
+  "url": "https://stockx.com/nike-dunk-low-red-panda",
+  "slug_tokens": [
+   "nike",
+   "dunk",
+   "low",
+   "red",
+   "panda"
+  ]
+ },
+ {
+  "id": "protected-stockx-3",
+  "type": "protected",
+  "site": "stockx",
+  "url": "https://stockx.com/nike-sb-dunk-low-panda-pigeon",
+  "slug_tokens": [
+   "nike",
+   "dunk",
+   "low",
+   "panda",
+   "pigeon"
+  ]
+ },
+ {
+  "id": "protected-stockx-4",
+  "type": "protected",
+  "site": "stockx",
+  "url": "https://stockx.com/nike-dunk-low-white-black-2021-w",
+  "slug_tokens": [
+   "nike",
+   "dunk",
+   "low",
+   "white",
+   "black"
+  ]
+ },
+ {
+  "id": "protected-stockx-5",
+  "type": "protected",
+  "site": "stockx",
+  "url": "https://stockx.com/nike-dunk-low-black-panda-20",
+  "slug_tokens": [
+   "nike",
+   "dunk",
+   "low",
+   "black",
+   "panda"
+  ]
+ },
+ {
+  "id": "protected-footlocker-1",
+  "type": "protected",
+  "site": "footlocker",
+  "url": "https://www.footlocker.com/product/model/nike-air-force-1-07-mens/333263.html",
+  "slug_tokens": [
+   "nike",
+   "air",
+   "force",
+   "mens"
+  ]
+ },
+ {
+  "id": "protected-footlocker-2",
+  "type": "protected",
+  "site": "footlocker",
+  "url": "https://www.footlocker.com/product/~/V4451010.html",
+  "slug_tokens": [
+   "V4451010"
+  ]
+ },
+ {
+  "id": "protected-footlocker-3",
+  "type": "protected",
+  "site": "footlocker",
+  "url": "https://www.footlocker.com/product/model/nike-air-force-1-low-boys-grade-school/100214.html",
+  "slug_tokens": [
+   "nike",
+   "air",
+   "force",
+   "low",
+   "boys"
+  ]
+ },
+ {
+  "id": "protected-footlocker-4",
+  "type": "protected",
+  "site": "footlocker",
+  "url": "https://www.footlocker.com/product/~/D8959001.html",
+  "slug_tokens": [
+   "D8959001"
+  ]
+ },
+ {
+  "id": "protected-footlocker-5",
+  "type": "protected",
+  "site": "footlocker",
+  "url": "https://www.footlocker.com/product/model/nike-air-force-1-womens/437436.html",
+  "slug_tokens": [
+   "nike",
+   "air",
+   "force",
+   "womens"
+  ]
+ },
+ {
+  "id": "protected-walmart-1",
+  "type": "protected",
+  "site": "walmart",
+  "url": "https://www.walmart.com/ip/AIRMSEN-2-Way-14-Cup-Programmable-Drip-Coffee-Maker-for-K-Cup-Combo-and-Ground-Single-Serve-Machine-Glass-Carafe-Auto-Pause-and-Pour-Black/16903456907",
+  "slug_tokens": [
+   "AIRMSEN",
+   "Way",
+   "Cup",
+   "Programmable",
+   "Drip"
+  ]
+ },
+ {
+  "id": "protected-walmart-2",
+  "type": "protected",
+  "site": "walmart",
+  "url": "https://www.walmart.com/ip/Beautiful-Perfect-Grind-Programmable-Single-Serve-Coffee-Maker-White-Icing-by-Drew-Barrymore/3479324898",
+  "slug_tokens": [
+   "Beautiful",
+   "Perfect",
+   "Grind",
+   "Programmable",
+   "Single"
+  ]
+ },
+ {
+  "id": "protected-walmart-3",
+  "type": "protected",
+  "site": "walmart",
+  "url": "https://www.walmart.com/ip/Mainstays-Black-12-Cup-Drip-Coffee-Maker/5162907971",
+  "slug_tokens": [
+   "Mainstays",
+   "Black",
+   "Cup",
+   "Drip",
+   "Coffee"
+  ]
+ },
+ {
+  "id": "protected-walmart-4",
+  "type": "protected",
+  "site": "walmart",
+  "url": "https://www.walmart.com/ip/Savour-Dual-Coffee-Maker-Machine-Black/15552307441",
+  "slug_tokens": [
+   "Savour",
+   "Dual",
+   "Coffee",
+   "Maker",
+   "Machine"
+  ]
+ },
+ {
+  "id": "protected-walmart-5",
+  "type": "protected",
+  "site": "walmart",
+  "url": "https://www.walmart.com/ip/Ninja-Hot-Iced-Single-Serve-or-Drip-Coffee-Maker-with-Rapid-Cold-Brew-10-Cup-Glass-Carafe-CM360/13700912880",
+  "slug_tokens": [
+   "Ninja",
+   "Hot",
+   "Iced",
+   "Single",
+   "Serve"
+  ]
+ },
+ {
+  "id": "pdf-1",
+  "type": "pdf",
+  "url": "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+  "must": [
+   "Request for Taxpayer"
+  ]
+ },
+ {
+  "id": "pdf-2",
+  "type": "pdf",
+  "url": "https://www.irs.gov/pub/irs-pdf/fw4.pdf",
+  "must": [
+   "Employee's Withholding Certificate"
+  ]
+ },
+ {
+  "id": "pdf-3",
+  "type": "pdf",
+  "url": "https://www.irs.gov/pub/irs-pdf/f1040.pdf",
+  "must": [
+   "Individual Income Tax Return"
+  ]
+ },
+ {
+  "id": "pdf-4",
+  "type": "pdf",
+  "url": "https://www.irs.gov/pub/irs-pdf/fw8ben.pdf",
+  "must": [
+   "Certificate of Foreign Status"
+  ]
+ },
+ {
+  "id": "pdf-5",
+  "type": "pdf",
+  "url": "https://www.irs.gov/pub/irs-pdf/fss4.pdf",
+  "must": [
+   "Application for Employer Identification Number"
+  ]
+ },
+ {
+  "id": "pdf-6",
+  "type": "pdf",
+  "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+  "must": [
+   "Dummy PDF file"
+  ]
+ },
+ {
+  "id": "pdf-7",
+  "type": "pdf",
+  "url": "https://arxiv.org/pdf/1706.03762",
+  "must": [
+   "Attention Is All You Need"
+  ]
+ },
+ {
+  "id": "pdf-8",
+  "type": "pdf",
+  "url": "https://www.uscis.gov/sites/default/files/document/forms/i-9.pdf",
+  "must": [
+   "Employment Eligibility Verification"
+  ]
+ },
+ {
+  "id": "pdf-9",
+  "type": "pdf",
+  "url": "https://pdfobject.com/pdf/sample.pdf",
+  "must": [
+   "This is a simple PDF"
+  ]
+ },
+ {
+  "id": "pdf-10",
+  "type": "pdf",
+  "url": "https://www.orimi.com/pdf-test.pdf",
+  "must": [
+   "PDF Test File"
+  ]
+ }
+]

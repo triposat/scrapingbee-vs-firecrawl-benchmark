@@ -1,0 +1,408 @@
+[
+ {
+  "url": "https://www.walmart.com/ip/Apple-AirPods-4/11381374703",
+  "checked_at": "2026-10-26T15:15:56.925218+00:00",
+  "default": {
+   "ok": true,
+   "cache": "hit",
+   "cachedAt": "2026-10-24T22:09:05.689Z",
+   "credits": 1,
+   "price": 99.0
+  },
+  "age_hours": 41.1,
+  "fresh": {
+   "ok": true,
+   "cache": null,
+   "cachedAt": null,
+   "credits": 1,
+   "price": 99.0
+  },
+  "price_changed": false
+ },
+ {
+  "url": "https://www.walmart.com/ip/AirPods-Pro-3/17835006350",
+  "checked_at": "2026-10-26T15:16:17.515979+00:00",
+  "default": {
+   "ok": true,
+   "cache": "hit",
+   "cachedAt": "2026-10-26T13:02:27.346Z",
+   "credits": 1,
+   "price": 199.0
+  },
+  "age_hours": 2.2,
+  "fresh": {
+   "ok": true,
+   "cache": null,
+   "cachedAt": null,
+   "credits": 1,
+   "price": 199.0
+  },
+  "price_changed": false
+ },
+ {
+  "url": "https://www.walmart.com/ip/Apple-AirPods-with-Charging-Case-2nd-Generation/604342441",
+  "checked_at": "2026-10-26T15:16:29.502270+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 89.99
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Apple-AirPods-Max-Over-Ear-Headphones-with-USB-C-Blue/11396065834",
+  "checked_at": "2026-10-26T15:16:35.075322+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 549.0
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Nintendo-Switch-2-System/15949610846",
+  "checked_at": "2026-10-26T15:16:43.335843+00:00",
+  "default": {
+   "ok": true,
+   "cache": "hit",
+   "cachedAt": "2026-10-26T13:32:56.702Z",
+   "credits": 1,
+   "price": 499.0
+  },
+  "age_hours": 1.7,
+  "fresh": {
+   "ok": true,
+   "cache": null,
+   "cachedAt": null,
+   "credits": 1,
+   "price": 499.0
+  },
+  "price_changed": false
+ },
+ {
+  "url": "https://www.walmart.com/ip/Nintendo-Switch-2-System/15949610846",
+  "checked_at": "2026-10-26T15:16:51.108672+00:00",
+  "default": {
+   "ok": true,
+   "cache": "hit",
+   "cachedAt": "2026-10-26T15:16:50.171Z",
+   "credits": 1,
+   "price": 499.0
+  },
+  "age_hours": 0.0,
+  "fresh": {
+   "ok": true,
+   "cache": null,
+   "cachedAt": null,
+   "credits": 1,
+   "price": 499.0
+  },
+  "price_changed": false
+ },
+ {
+  "url": "https://www.walmart.com/ip/Nintendo-Switch-2-The-Legend-of-Zelda-40th-Anniversary-Edition/21002656445",
+  "checked_at": "2026-10-26T15:17:06.044673+00:00",
+  "default": {
+   "ok": true,
+   "cache": "hit",
+   "cachedAt": "2026-10-26T12:02:23.173Z",
+   "credits": 1,
+   "price": 700.0
+  },
+  "age_hours": 3.2,
+  "fresh": {
+   "ok": true,
+   "cache": null,
+   "cachedAt": null,
+   "credits": 1,
+   "price": 700.0
+  },
+  "price_changed": false
+ },
+ {
+  "url": "https://www.walmart.com/ip/2025-Newest-Nintendo-Switch-2-System-12-Month-NSO-Expansion-Pack-Individual-Membership/17098054931",
+  "checked_at": "2026-10-26T15:17:15.696649+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 658.95
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Stanley-Quencher-H2-0-FlowState-Tumbler-30oz-with-Handle-and-Straw/17911020165",
+  "checked_at": "2026-10-26T15:17:22.214235+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 24.97
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Stanley-Quencher-Flowstate-40oz-Hyper-Geo-Stainless-Steel-Tumbler/7436358653",
+  "checked_at": "2026-10-26T15:17:28.999264+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 24.97
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/The-Quencher-H2-0-FlowState-Tumbler-30-oz-0-89-L-Hammertone-Clay/18262105945",
+  "checked_at": "2026-10-26T15:17:55.596956+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 24.97
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Stanley-Quencher-H2-0-FlowState-40oz-Vivid-Violet-Tumbler-10-10824-501/16287963697",
+  "checked_at": "2026-10-26T15:18:05.119536+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 19.96
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Ninja-Crispi-Air-Fryer-White-FN100WH/6077911929",
+  "checked_at": "2026-10-26T15:18:10.897018+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 134.0
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Ninja-4-Qt-Air-Fryer-3-Functions-Air-Fry-Reheat-and-Dehydrate-Dishwasher-Safe-Non-Stick-AF100WM-Black/844320666",
+  "checked_at": "2026-10-26T15:18:16.958544+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 59.0
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Ninja-Foodi-4-in-1-8-Quart-2-Basket-Air-Fryer-with-DualZone-Technology-Black-Air-Fry-Roast-More-DZ100/585029646",
+  "checked_at": "2026-10-26T15:18:27.140751+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 118.95
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Ninja-AF150AMZ-Air-Fryer-XL-5-5-Qt-Capacity-can-Air-Fry-Air-Roast-Bake-Reheat-Dehydrate-Dishwasher-Safe-Nonstick-Basket-Crisper-Plate-Chef-Inspired-R/11631105439",
+  "checked_at": "2026-10-26T15:18:33.378200+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 152.99
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/PlayStation-5-Disc-Console-Slim/17816601985",
+  "checked_at": "2026-10-26T15:18:38.976057+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 649.0
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/PlayStation-5-Digital-Console-Slim/17852302051",
+  "checked_at": "2026-10-26T15:19:00.492213+00:00",
+  "default": {
+   "ok": true,
+   "cache": "hit",
+   "cachedAt": "2026-10-25T01:43:23.876Z",
+   "credits": 1,
+   "price": 599.0
+  },
+  "age_hours": 37.6,
+  "fresh": {
+   "ok": true,
+   "cache": null,
+   "cachedAt": null,
+   "credits": 1,
+   "price": 599.0
+  },
+  "price_changed": false
+ },
+ {
+  "url": "https://www.walmart.com/ip/PlayStation-5-Digital-Console-Slim-825GB-with-Sony-PS5-DualSense-Wireless-Controller-Midnight-Black/20888517730",
+  "checked_at": "2026-10-26T15:19:09.423600+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 673.88
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Sony-PlayStation-5-Gaming-Console-Disc-Version-with-825-GB-Storage-White/20444255407",
+  "checked_at": "2026-10-26T15:19:19.091480+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 589.98
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/LEGO-Classic-Medium-Creative-Brick-Box/41004055",
+  "checked_at": "2026-10-26T15:19:24.833730+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 21.42
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/LEGO-66817/17532304819",
+  "checked_at": "2026-10-26T15:19:30.528304+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 29.71
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/LEGO-Ideas-Volvo-EC500-Hybrid-Excavator-21362/15108809422",
+  "checked_at": "2026-10-26T15:19:35.814294+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 88.99
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/LEGO-Star-Wars-66804/15723622534",
+  "checked_at": "2026-10-26T15:19:42.853533+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 87.95
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/KEE-BLACK-GEN-2/12516374178",
+  "checked_at": "2026-10-26T15:19:49.106568+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 49.47
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Keurig-K-Duo-Essentials-Hot-Iced-Single-Serve-K-Cup-Pod-Coffee-Maker-Carafe-Black/5091952167",
+  "checked_at": "2026-10-26T15:20:10.292287+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 109.0
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/K-Classic-Coffee-Maker-Black/49800185",
+  "checked_at": "2026-10-26T15:20:15.621684+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 159.95
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Keurig-K-Caf-Essentials-Single-Serve-K-Cup-Pod-Coffee-Maker-Black/523103568",
+  "checked_at": "2026-10-26T15:20:22.021098+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 108.0
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Apple-iPad-11th-Gen-128GB-Blue-Wi-Fi-MD4A4LL-A-Tablet/15437250773",
+  "checked_at": "2026-10-26T15:20:31.882387+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 399.0
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Apple-iPad-11-inch-A16-Wi-Fi-128GB-Silver/15483805722",
+  "checked_at": "2026-10-26T15:20:40.120767+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 399.0
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/Apple-iPad-10-9-WiFi-64GB-10th-Generation-Silver/1924288816",
+  "checked_at": "2026-10-26T15:20:49.989758+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 459.99
+  }
+ },
+ {
+  "url": "https://www.walmart.com/ip/13-inch-iPad-Air-Wi-Fi-128GB-Blue/19686104030",
+  "checked_at": "2026-10-26T15:21:01.453039+00:00",
+  "default": {
+   "ok": true,
+   "cache": "miss",
+   "cachedAt": null,
+   "credits": 1,
+   "price": 949.0
+  }
+ }
+]

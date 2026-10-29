@@ -1,0 +1,202 @@
+[
+ {
+  "id": "protected-etsy-1",
+  "url": "https://www.etsy.com/listing/1443519508/handmade-ceramic-mug-set-of-2-stoneware",
+  "status": 200,
+  "credits": 25,
+  "truth": [
+   {
+    "name": "Handmade Ceramic Mug Set of 2, Stoneware Pottery Mugs, Coffee Lover Gift, 5 oz",
+    "price": 59.5,
+    "currency": "USD"
+   }
+  ]
+ },
+ {
+  "id": "protected-etsy-2",
+  "url": "https://www.etsy.com/listing/4457414626/speckled-ceramic-espresso-cup-small-5oz",
+  "status": 200,
+  "credits": 25,
+  "truth": [
+   {
+    "name": "Speckled Ceramic Espresso Cup // Small 5oz Ceramic Mug \u2014 Handmade Pottery",
+    "price": 34.0,
+    "currency": "USD"
+   }
+  ]
+ },
+ {
+  "id": "protected-etsy-3",
+  "url": "https://www.etsy.com/listing/4397890848/personalised-black-speckle-ceramic-mug",
+  "status": 200,
+  "credits": 25,
+  "truth": [
+   {
+    "name": "Personalised Black Speckle Ceramic Mug | Handmade Mug | Handmade Mug | Handmade Gift | Stoneware Mug |",
+    "price": 32.05,
+    "currency": "USD"
+   }
+  ]
+ },
+ {
+  "id": "protected-etsy-4",
+  "url": "https://www.etsy.com/listing/4404419843/handmade-ceramic-mug-set-one-of-a-kind",
+  "status": 200,
+  "credits": 25,
+  "truth": [
+   {
+    "name": "Handmade Ceramic Mug Set: One-of-a-kind. Earthenware, Food Safe.",
+    "price": 45.0,
+    "currency": "USD"
+   }
+  ]
+ },
+ {
+  "id": "protected-etsy-5",
+  "url": "https://www.etsy.com/listing/1668667853/handmade-stoneware-ceramic-mug-6oz",
+  "status": 200,
+  "credits": 25,
+  "truth": [
+   {
+    "name": "Handmade Stoneware Ceramic Mug: 6oz Coffee, Tea, Cappuccino",
+    "price": 35.4,
+    "currency": "USD"
+   }
+  ]
+ },
+ {
+  "id": "protected-zillow-1",
+  "url": "https://www.zillow.com/homedetails/221-Park-Ln-Austin-TX-78704/29458732_zpid/",
+  "status": 200,
+  "credits": 1,
+  "truth": [
+   {
+    "name": "221 Park Ln, Austin, TX 78704",
+    "price": 2590000.0,
+    "currency": "USD"
+   }
+  ]
+ },
+ {
+  "id": "protected-zillow-2",
+  "url": "https://www.zillow.com/homedetails/1410-E-3rd-St-A-Austin-TX-78702/331627622_zpid/",
+  "status": 200,
+  "credits": 1,
+  "truth": [
+   {
+    "name": "1410 E 3rd St #A, Austin, TX 78702",
+    "price": 1418800.0,
+    "currency": "USD"
+   }
+  ]
+ },
+ {
+  "id": "protected-zillow-3",
+  "url": "https://www.zillow.com/homedetails/1117-San-Augustine-Dr-Austin-TX-78733/29345062_zpid/",
+  "status": 200,
+  "credits": 1,
+  "truth": [
+   {
+    "name": "1117 San Augustine Dr, Austin, TX 78733",
+    "price": 1070000.0,
+    "currency": "USD"
+   }
+  ]
+ },
+ {
+  "id": "protected-zillow-4",
+  "url": "https://www.zillow.com/homedetails/606-Josephine-St-Austin-TX-78704/29324871_zpid/",
+  "status": 200,
+  "credits": 1,
+  "truth": [
+   {
+    "name": "606 Josephine St, Austin, TX 78704",
+    "price": 2250000.0,
+    "currency": "USD"
+   }
+  ]
+ },
+ {
+  "id": "protected-zillow-5",
+  "url": "https://www.zillow.com/homedetails/1905-Wood-Acre-Ln-Austin-TX-78733/114404916_zpid/",
+  "status": 200,
+  "credits": 1,
+  "truth": [
+   {
+    "name": "1905 Wood Acre Ln, Austin, TX 78733",
+    "price": 4950000.0,
+    "currency": "USD"
+   }
+  ]
+ },
+ {
+  "id": "protected-walmart-1",
+  "url": "https://www.walmart.com/ip/AIRMSEN-2-Way-14-Cup-Programmable-Drip-Coffee-Maker-for-K-Cup-Combo-and-Ground-Single-Serve-Machine-Glass-Carafe-Auto-Pause-and-Pour-Black/16903456907",
+  "status": 200,
+  "credits": 10,
+  "truth": [
+   {
+    "name": "AIRMSEN 12-Cup Drip Coffee Maker with K Cup Combo, Programmable Coffee Machine with 1-4 Cup Setting, Single Serve or Coffee Pot, Auto Shut-off, Spill-Free Spout",
+    "price": 89.99,
+    "currency": "USD",
+    "source": "__NEXT_DATA__ priceInfo.currentPrice"
+   }
+  ]
+ },
+ {
+  "id": "protected-walmart-2",
+  "url": "https://www.walmart.com/ip/Beautiful-Perfect-Grind-Programmable-Single-Serve-Coffee-Maker-White-Icing-by-Drew-Barrymore/3479324898",
+  "status": 200,
+  "credits": 10,
+  "truth": [
+   {
+    "name": "Beautiful by Drew Barrymore Perfect Grind Programmable Single-Serve Coffee Maker with Built-In Grinder, White Icing",
+    "price": 79.0,
+    "currency": "USD",
+    "source": "__NEXT_DATA__ priceInfo.currentPrice"
+   }
+  ]
+ },
+ {
+  "id": "protected-walmart-3",
+  "url": "https://www.walmart.com/ip/Mainstays-Black-12-Cup-Drip-Coffee-Maker/5162907971",
+  "status": 200,
+  "credits": 10,
+  "truth": [
+   {
+    "name": "Mainstays Black 12-Cup Drip Coffee Maker",
+    "price": 16.88,
+    "currency": "USD",
+    "source": "__NEXT_DATA__ priceInfo.currentPrice"
+   }
+  ]
+ },
+ {
+  "id": "protected-walmart-4",
+  "url": "https://www.walmart.com/ip/Savour-Dual-Coffee-Maker-Machine-Black/15552307441",
+  "status": 200,
+  "credits": 10,
+  "truth": [
+   {
+    "name": "Savour Dual Coffee Maker, Programmable 12-Cup Coffee Pot & Single Serve Coffee Machine",
+    "price": 119.99,
+    "currency": "USD",
+    "source": "__NEXT_DATA__ priceInfo.currentPrice"
+   }
+  ]
+ },
+ {
+  "id": "protected-walmart-5",
+  "url": "https://www.walmart.com/ip/Ninja-Hot-Iced-Single-Serve-or-Drip-Coffee-Maker-with-Rapid-Cold-Brew-10-Cup-Glass-Carafe-CM360/13700912880",
+  "status": 200,
+  "credits": 10,
+  "truth": [
+   {
+    "name": "Ninja Hot & Iced 10-Cup Drip Coffee Maker, 4 Brew Styles, Rapid Cold Brew, CM360WM, Black",
+    "price": 98.0,
+    "currency": "USD",
+    "source": "__NEXT_DATA__ priceInfo.currentPrice"
+   }
+  ]
+ }
+]

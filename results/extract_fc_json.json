@@ -1,0 +1,362 @@
+[
+ {
+  "url": "https://books.toscrape.com/catalogue/in-her-wake_980/index.html",
+  "got": {
+   "title": "In Her Wake",
+   "price": 12.84,
+   "stock": 19,
+   "upc": "23356462d1320d61",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/how-music-works_979/index.html",
+  "got": {
+   "title": "How Music Works",
+   "price": 37.32,
+   "stock": 19,
+   "upc": "327f68a59745c102",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/foolproof-preserving-a-guide-to-small-batch-jams-jellies-pickles-condiments-and-more-a-foolproof-guide-to-making-small-batch-jams-jellies-pickles-condiments-and-more_978/index.html",
+  "got": {
+   "title": "Foolproof Preserving: A Guide to Small Batch Jams, Jellies, Pickles, Condiments, and More: A Foolproof Guide to Making Small Batch Jams, Jellies, Pickles, Condiments, and More",
+   "price": 30.52,
+   "stock": 19,
+   "upc": "5674a18a29a43ced",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/chase-me-paris-nights-2_977/index.html",
+  "got": {
+   "title": "Chase Me (Paris Nights #2)",
+   "price": 25.27,
+   "stock": 19,
+   "upc": "c2e46a2ee3b4a322",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/black-dust_976/index.html",
+  "got": {
+   "title": "Black Dust",
+   "price": 34.53,
+   "stock": 19,
+   "upc": "00bfed9e18bb36f3",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/birdsong-a-story-in-pictures_975/index.html",
+  "got": {
+   "title": "Birdsong: A Story in Pictures",
+   "price": 54.64,
+   "stock": 19,
+   "upc": "9528d0948525bf5f",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/americas-cradle-of-quarterbacks-western-pennsylvanias-football-factory-from-johnny-unitas-to-joe-montana_974/index.html",
+  "got": {
+   "title": "America's Cradle of Quarterbacks: Western Pennsylvania's Football Factory from Johnny Unitas to Joe Montana",
+   "price": 22.5,
+   "stock": 19,
+   "upc": "c7d160c2c0de586f",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/aladdin-and-his-wonderful-lamp_973/index.html",
+  "got": {
+   "title": "Aladdin and His Wonderful Lamp",
+   "price": 53.13,
+   "stock": 19,
+   "upc": "904208d6aa64b655",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/worlds-elsewhere-journeys-around-shakespeares-globe_972/index.html",
+  "got": {
+   "title": "Worlds Elsewhere: Journeys Around Shakespeare\u2019s Globe",
+   "price": 40.3,
+   "stock": 18,
+   "upc": "4c28def39d850cdf",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/wall-and-piece_971/index.html",
+  "got": {
+   "title": "Wall and Piece",
+   "price": 44.18,
+   "stock": 18,
+   "upc": "ccd9ffa25efabdea",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/the-four-agreements-a-practical-guide-to-personal-freedom_970/index.html",
+  "got": {
+   "title": "The Four Agreements: A Practical Guide to Personal Freedom",
+   "price": 17.66,
+   "stock": 18,
+   "upc": "6258a1f6a6dcfe50",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/the-five-love-languages-how-to-express-heartfelt-commitment-to-your-mate_969/index.html",
+  "got": {
+   "title": "The Five Love Languages: How to Express Heartfelt Commitment to Your Mate",
+   "price": 31.05,
+   "stock": 18,
+   "upc": "3c039985229453bf",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/the-elephant-tree_968/index.html",
+  "got": {
+   "title": "The Elephant Tree",
+   "price": 23.82,
+   "stock": 18,
+   "upc": "5dada2b7be26bd03",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/the-bear-and-the-piano_967/index.html",
+  "got": {
+   "title": "The Bear and the Piano",
+   "price": 36.89,
+   "stock": 18,
+   "upc": "9f6568e9c95f60b0",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/sophies-world_966/index.html",
+  "got": {
+   "title": "Sophie's World",
+   "price": 15.94,
+   "stock": 18,
+   "upc": "6be3beb0793a53e7",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/penny-maybe_965/index.html",
+  "got": {
+   "title": "Penny Maybe",
+   "price": 33.29,
+   "stock": 18,
+   "upc": "668fe56b17cfcd4f",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/maude-1883-1993she-grew-up-with-the-country_964/index.html",
+  "got": {
+   "title": "Maude (1883-1993):She Grew Up with the country",
+   "price": 18.02,
+   "stock": 18,
+   "upc": "094b269567e1c300",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/in-a-dark-dark-wood_963/index.html",
+  "got": {
+   "title": "In a Dark, Dark Wood",
+   "price": 19.63,
+   "stock": 18,
+   "upc": "19ed25f4641d5efd",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/behind-closed-doors_962/index.html",
+  "got": {
+   "title": "Behind Closed Doors",
+   "price": 52.22,
+   "stock": 18,
+   "upc": "be5cc846f45496fb",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ },
+ {
+  "url": "https://books.toscrape.com/catalogue/you-cant-bury-them-all-poems_961/index.html",
+  "got": {
+   "title": "You can't bury them all: Poems",
+   "price": 33.63,
+   "stock": 17,
+   "upc": "55f9da0c5eea2e10",
+   "rating": 0
+  },
+  "ok": {
+   "title": true,
+   "price": true,
+   "stock": true,
+   "upc": true,
+   "rating": false
+  },
+  "credits": 5
+ }
+]

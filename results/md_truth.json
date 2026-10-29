@@ -1,0 +1,106 @@
+{
+ "https://en.wikipedia.org/wiki/Web_scraping": {
+  "recall": [
+   "constitutes \"Interference with Business Relations\", \"Trespass\",",
+   "form of web scraping is manual",
+   "district court ruled in 2012 that",
+   "Iqbal/Twombly Raise the Bar for Browsewrap",
+   "would be finding and copying names"
+  ],
+  "h": 18,
+  "tr": 3
+ },
+ "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes": {
+  "recall": [
+   "must , must not and should",
+   "the original on January 7, 2017",
+   "Went to a Russian Website and",
+   "HTTP/1.0 standard did not define any",
+   "Data and Web of Entities: Identity"
+  ],
+  "h": 25,
+  "tr": 21
+ },
+ "https://docs.python.org/3/library/urllib.robotparser.html": {
+  "recall": [
+   "details on the structure of robots.txt",
+   "is no such parameter or the",
+   "time the robots.txt file was last",
+   "URL referring to a robots.txt file.",
+   "provides a single class, RobotFileParser ,"
+  ],
+  "h": 1,
+  "tr": 0
+ },
+ "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/403": {
+  "recall": [
+   "is similar to 401 , except",
+   "contains an Authorization header using Bearer",
+   "receive a 403 response should expect",
+   "403 Forbidden client error response status",
+   "was last modified on Jun 22,"
+  ],
+  "h": 7,
+  "tr": 2
+ },
+ "https://www.rfc-editor.org/rfc/rfc9309.html": {
+  "recall": [
+   "applies to services that provide resources",
+   "impose a parsing limit to protect",
+   "in the context of HTTP or",
+   "2022 IETF Trust and the persons",
+   "Exclusion Protocol is not a substitute"
+  ],
+  "h": 33,
+  "tr": 2
+ },
+ "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html": {
+  "recall": [
+   "collection of poetry and drawings from",
+   "in the treetopDon't you know a",
+   "and creative verse can amuse the",
+   "collection of poetry and drawings from",
+   "to imagine a world without A"
+  ],
+  "h": 3,
+  "tr": 7
+ },
+ "https://quotes.toscrape.com/page/1/": {
+  "recall": [],
+  "h": 2,
+  "tr": 0
+ },
+ "https://github.com/scrapy/scrapy": {
+  "recall": [
+   "fast high-level web crawling & scraping",
+   "wish to contribute, see Contributing .",
+   "a web scraping framework to extract",
+   "the documentation to learn how to",
+   "maintained by Zyte (formerly Scrapinghub) and"
+  ],
+  "h": 17,
+  "tr": 28
+ },
+ "https://www.python-httpx.org/quickstart/": {
+  "recall": [
+   "data can also include multiple values",
+   "the text, on a line-by-line basis...",
+   "modify the value to be more",
+   "also upload files, using HTTP multipart",
+   "of HTTP requests, such as POST"
+  ],
+  "h": 18,
+  "tr": 0
+ },
+ "https://www.scrapethissite.com/pages/forms/": {
+  "recall": [
+   "8 video lessons that show you",
+   "look at how pagination and search",
+   "web scraper that can conduct searches",
+   "a database of NHL team stats",
+   "a scraper that handles common website"
+  ],
+  "h": 1,
+  "tr": 26
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "static|sb": {
+  "n": 60,
+  "ok": 60,
+  "rate": 1.0,
+  "runs": [
+   "run1",
+   "run2",
+   "run3"
+  ],
+  "credits": 60,
+  "usd_per_1k_ok": 0.2533333333333333
+ },
+ "static|fc": {
+  "n": 60,
+  "ok": 60,
+  "rate": 1.0,
+  "runs": [
+   "run1",
+   "run2",
+   "run3"
+  ],
+  "credits": 60,
+  "usd_per_1k_ok": 3.8
+ },
+ "js|sb": {
+  "n": 60,
+  "ok": 60,
+  "rate": 1.0,
+  "runs": [
+   "run1",
+   "run2",
+   "run3"
+  ],
+  "credits": 300,
+  "usd_per_1k_ok": 1.2666666666666666
+ },
+ "js|fc": {
+  "n": 60,
+  "ok": 60,
+  "rate": 1.0,
+  "runs": [
+   "run1",
+   "run2",
+   "run3"
+  ],
+  "credits": 60,
+  "usd_per_1k_ok": 3.8
+ },
+ "protected|sb": {
+  "n": 90,
+  "ok": 89,
+  "rate": 0.9888888888888889,
+  "runs": [
+   "run1",
+   "run2",
+   "run3"
+  ],
+  "credits": 2555,
+  "usd_per_1k_ok": 7.272659176029962
+ },
+ "protected|fc": {
+  "n": 90,
+  "ok": 90,
+  "rate": 1.0,
+  "runs": [
+   "run1",
+   "run2",
+   "run3"
+  ],
+  "credits": 90,
+  "usd_per_1k_ok": 3.8
+ },
+ "pdf|sb": {
+  "n": 30,
+  "ok": 29,
+  "rate": 0.9666666666666667,
+  "runs": [
+   "run1",
+   "run2",
+   "run3"
+  ],
+  "credits": 29,
+  "usd_per_1k_ok": 0.25333333333333335
+ },
+ "pdf|fc": {
+  "n": 30,
+  "ok": 30,
+  "rate": 1.0,
+  "runs": [
+   "run1",
+   "run2",
+   "run3"
+  ],
+  "credits": 114,
+  "usd_per_1k_ok": 14.44
+ }
+}

@@ -1,0 +1,7 @@
+Fetching sitemap: https://www.python-httpx.org/sitemap.xml
+Found 23 URLs in sitemap.
+Crawl: concurrency 20 (usage API, capped by --max-pages 20)
+Saved to /path/to/httpx-docs
+real 6.20
+user 1.00
+sys 0.16

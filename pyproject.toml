@@ -1,0 +1,5 @@
+[project]
+name = "scrapingbee-vs-firecrawl-benchmark"
+version = "1.0.0"
+requires-python = ">=3.12"
+dependencies = ["requests", "beautifulsoup4", "lxml", "tiktoken", "pypdf", "matplotlib"]

@@ -1,0 +1,66 @@
+[
+ {
+  "round": 1,
+  "api": "sb",
+  "asked": "ID",
+  "status": 200,
+  "credits": 10,
+  "price": "Rp 115 999"
+ },
+ {
+  "round": 1,
+  "api": "fc",
+  "asked": "ID",
+  "status": 200,
+  "credits": 1,
+  "price": "$14.99"
+ },
+ {
+  "round": 1,
+  "api": "sb",
+  "asked": "DE",
+  "status": 200,
+  "credits": 10,
+  "price": "13,99\u20ac"
+ },
+ {
+  "round": 1,
+  "api": "fc",
+  "asked": "DE",
+  "status": 200,
+  "credits": 1,
+  "price": "13,99\u20ac"
+ },
+ {
+  "round": 2,
+  "api": "sb",
+  "asked": "ID",
+  "status": 200,
+  "credits": 10,
+  "price": "Rp 115 999"
+ },
+ {
+  "round": 2,
+  "api": "fc",
+  "asked": "ID",
+  "status": 200,
+  "credits": 1,
+  "price": "$14.99"
+ },
+ {
+  "round": 2,
+  "api": "sb",
+  "asked": "DE",
+  "status": 200,
+  "credits": 10,
+  "price": "13,99\u20ac"
+ },
+ {
+  "round": 2,
+  "api": "fc",
+  "asked": "DE",
+  "status": 200,
+  "credits": 1,
+  "price": "13,99\u20ac"
+ }
+]

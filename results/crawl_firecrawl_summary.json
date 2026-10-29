@@ -1,0 +1,93 @@
+{
+ "success": true,
+ "status": "completed",
+ "completed": 20,
+ "total": 20,
+ "creditsUsed": 20,
+ "expiresAt": "2026-10-27T12:19:33.000Z",
+ "data": [
+  {
+   "url": "https://www.python-httpx.org/",
+   "chars": 4207
+  },
+  {
+   "url": "https://www.python-httpx.org/advanced/extensions/",
+   "chars": 9471
+  },
+  {
+   "url": "https://www.python-httpx.org/api/",
+   "chars": 21399
+  },
+  {
+   "url": "https://www.python-httpx.org/advanced/ssl/",
+   "chars": 3713
+  },
+  {
+   "url": "https://www.python-httpx.org/quickstart/",
+   "chars": 14590
+  },
+  {
+   "url": "https://www.python-httpx.org/advanced/timeouts/",
+   "chars": 2850
+  },
+  {
+   "url": "https://www.python-httpx.org/environment_variables/",
+   "chars": 2941
+  },
+  {
+   "url": "https://www.python-httpx.org/async/",
+   "chars": 6460
+  },
+  {
+   "url": "https://www.python-httpx.org/advanced/proxies/",
+   "chars": 3624
+  },
+  {
+   "url": "https://www.python-httpx.org/exceptions/",
+   "chars": 4822
+  },
+  {
+   "url": "https://www.python-httpx.org/http2/",
+   "chars": 2609
+  },
+  {
+   "url": "https://www.python-httpx.org//async/",
+   "chars": 6463
+  },
+  {
+   "url": "https://www.python-httpx.org/advanced/resource-limits/",
+   "chars": 609
+  },
+  {
+   "url": "https://www.python-httpx.org/advanced/transports/",
+   "chars": 14242
+  },
+  {
+   "url": "https://www.python-httpx.org/compatibility/",
+   "chars": 10048
+  },
+  {
+   "url": "https://www.python-httpx.org/code_of_conduct/",
+   "chars": 4714
+  },
+  {
+   "url": "https://www.python-httpx.org/contributing/",
+   "chars": 8162
+  },
+  {
+   "url": "https://www.python-httpx.org/logging/",
+   "chars": 4015
+  },
+  {
+   "url": "https://www.python-httpx.org/third_party_packages/",
+   "chars": 3447
+  },
+  {
+   "url": "https://www.python-httpx.org/troubleshooting/",
+   "chars": 2257
+  }
+ ],
+ "createdAt": "2026-10-26T12:19:00.092Z",
+ "completedAt": "2026-10-26T12:19:16.335Z",
+ "duration": 16.243
+}

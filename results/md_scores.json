@@ -1,0 +1,222 @@
+[
+ {
+  "api": "sb",
+  "page": "en.wikipedia.org/wiki/Web_scraping",
+  "recall": 5,
+  "recall_n": 5,
+  "headings": 19,
+  "h_true": 18,
+  "table_rows": 9,
+  "tr_true": 3,
+  "credits": 1
+ },
+ {
+  "api": "sb",
+  "page": "en.wikipedia.org/wiki/List_of_HTTP_statu",
+  "recall": 4,
+  "recall_n": 5,
+  "headings": 26,
+  "h_true": 25,
+  "table_rows": 23,
+  "tr_true": 21,
+  "credits": 1
+ },
+ {
+  "api": "sb",
+  "page": "docs.python.org/3/library/urllib.robotpa",
+  "recall": 5,
+  "recall_n": 5,
+  "headings": 9,
+  "h_true": 1,
+  "table_rows": 0,
+  "tr_true": 0,
+  "credits": 1
+ },
+ {
+  "api": "sb",
+  "page": "developer.mozilla.org/en-US/docs/Web/HTT",
+  "recall": 2,
+  "recall_n": 5,
+  "headings": 8,
+  "h_true": 7,
+  "table_rows": 3,
+  "tr_true": 2,
+  "credits": 1
+ },
+ {
+  "api": "sb",
+  "page": "www.rfc-editor.org/rfc/rfc9309.html",
+  "recall": 5,
+  "recall_n": 5,
+  "headings": 33,
+  "h_true": 33,
+  "table_rows": 50,
+  "tr_true": 2,
+  "credits": 1
+ },
+ {
+  "api": "sb",
+  "page": "books.toscrape.com/catalogue/a-light-in-",
+  "recall": 5,
+  "recall_n": 5,
+  "headings": 3,
+  "h_true": 3,
+  "table_rows": 9,
+  "tr_true": 7,
+  "credits": 1
+ },
+ {
+  "api": "sb",
+  "page": "quotes.toscrape.com/page/1/",
+  "recall": 0,
+  "recall_n": 0,
+  "headings": 2,
+  "h_true": 2,
+  "table_rows": 0,
+  "tr_true": 0,
+  "credits": 1
+ },
+ {
+  "api": "sb",
+  "page": "github.com/scrapy/scrapy",
+  "recall": 3,
+  "recall_n": 5,
+  "headings": 17,
+  "h_true": 17,
+  "table_rows": 29,
+  "tr_true": 28,
+  "credits": 1
+ },
+ {
+  "api": "sb",
+  "page": "www.python-httpx.org/quickstart/",
+  "recall": 5,
+  "recall_n": 5,
+  "headings": 18,
+  "h_true": 18,
+  "table_rows": 0,
+  "tr_true": 0,
+  "credits": 1
+ },
+ {
+  "api": "sb",
+  "page": "www.scrapethissite.com/pages/forms/",
+  "recall": 4,
+  "recall_n": 5,
+  "headings": 1,
+  "h_true": 1,
+  "table_rows": 27,
+  "tr_true": 26,
+  "credits": 1
+ },
+ {
+  "api": "fc",
+  "page": "en.wikipedia.org/wiki/Web_scraping",
+  "recall": 5,
+  "recall_n": 5,
+  "headings": 19,
+  "h_true": 18,
+  "table_rows": 9,
+  "tr_true": 3,
+  "credits": 1
+ },
+ {
+  "api": "fc",
+  "page": "en.wikipedia.org/wiki/List_of_HTTP_statu",
+  "recall": 4,
+  "recall_n": 5,
+  "headings": 25,
+  "h_true": 25,
+  "table_rows": 8,
+  "tr_true": 21,
+  "credits": 1
+ },
+ {
+  "api": "fc",
+  "page": "docs.python.org/3/library/urllib.robotpa",
+  "recall": 5,
+  "recall_n": 5,
+  "headings": 6,
+  "h_true": 1,
+  "table_rows": 0,
+  "tr_true": 0,
+  "credits": 1
+ },
+ {
+  "api": "fc",
+  "page": "developer.mozilla.org/en-US/docs/Web/HTT",
+  "recall": 2,
+  "recall_n": 5,
+  "headings": 7,
+  "h_true": 7,
+  "table_rows": 3,
+  "tr_true": 2,
+  "credits": 1
+ },
+ {
+  "api": "fc",
+  "page": "www.rfc-editor.org/rfc/rfc9309.html",
+  "recall": 5,
+  "recall_n": 5,
+  "headings": 33,
+  "h_true": 33,
+  "table_rows": 48,
+  "tr_true": 2,
+  "credits": 1
+ },
+ {
+  "api": "fc",
+  "page": "books.toscrape.com/catalogue/a-light-in-",
+  "recall": 5,
+  "recall_n": 5,
+  "headings": 3,
+  "h_true": 3,
+  "table_rows": 7,
+  "tr_true": 7,
+  "credits": 1
+ },
+ {
+  "api": "fc",
+  "page": "quotes.toscrape.com/page/1/",
+  "recall": 0,
+  "recall_n": 0,
+  "headings": 2,
+  "h_true": 2,
+  "table_rows": 0,
+  "tr_true": 0,
+  "credits": 1
+ },
+ {
+  "api": "fc",
+  "page": "github.com/scrapy/scrapy",
+  "recall": 3,
+  "recall_n": 5,
+  "headings": 17,
+  "h_true": 17,
+  "table_rows": 29,
+  "tr_true": 28,
+  "credits": 1
+ },
+ {
+  "api": "fc",
+  "page": "www.python-httpx.org/quickstart/",
+  "recall": 5,
+  "recall_n": 5,
+  "headings": 18,
+  "h_true": 18,
+  "table_rows": 0,
+  "tr_true": 0,
+  "credits": 1
+ },
+ {
+  "api": "fc",
+  "page": "www.scrapethissite.com/pages/forms/",
+  "recall": 4,
+  "recall_n": 5,
+  "headings": 1,
+  "h_true": 1,
+  "table_rows": 27,
+  "tr_true": 26,
+  "credits": 1
+ }
+]

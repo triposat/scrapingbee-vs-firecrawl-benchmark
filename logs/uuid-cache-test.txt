@@ -1,0 +1,5 @@
+# httpbin.org/uuid returns a new random ID on every request. 2026-10-26T16:18:24Z
+ScrapingBee request 1: {"uuid":"37fbb242-e010-4f1f-a530-79fbcb6f13c5"} spb-cost: 1
+ScrapingBee request 2: {"uuid":"01f7e94e-64b8-4c8e-b3bf-b8e7bbf8695d"} spb-cost: 1
+Firecrawl default request 1: ```json{"uuid":"dd2de5b5-fb91-407e-8238-db7227c7c830"}``` cacheState hit cachedAt 2026-10-26T16:08:01.237Z creditsUsed 1
+Firecrawl default request 2: ```json{"uuid":"dd2de5b5-fb91-407e-8238-db7227c7c830"}``` cacheState hit cachedAt 2026-10-26T16:08:01.237Z creditsUsed 1

@@ -1,0 +1,202 @@
+[
+ {
+  "api": "sb",
+  "asked": "DE",
+  "status": 200,
+  "credits": 10,
+  "echo": {
+   "country": "Germany",
+   "countryCode": "DE",
+   "isp": "NetCom BW GmbH",
+   "query": "94.176.251.237"
+  }
+ },
+ {
+  "api": "fc",
+  "asked": "DE",
+  "status": 200,
+  "credits": 1,
+  "proxy": "basic",
+  "echo": {
+   "country": "Germany",
+   "countryCode": "DE",
+   "isp": "Simoresta UAB",
+   "query": "151.240.175.247"
+  }
+ },
+ {
+  "api": "sb",
+  "asked": "JP",
+  "status": 200,
+  "credits": 10,
+  "echo": {
+   "country": "Japan",
+   "countryCode": "JP",
+   "isp": "SoftBank Corp.",
+   "query": "60.88.120.125"
+  }
+ },
+ {
+  "api": "fc",
+  "asked": "JP",
+  "status": 200,
+  "credits": 1,
+  "proxy": "basic",
+  "echo": {
+   "country": "Japan",
+   "countryCode": "JP",
+   "isp": "IPRoyal Services FZE LLC",
+   "query": "43.255.188.112"
+  }
+ },
+ {
+  "api": "sb",
+  "asked": "BR",
+  "status": 200,
+  "credits": 10,
+  "echo": {
+   "country": "Brazil",
+   "countryCode": "BR",
+   "isp": "VIA ONDAS TELECOMUNICACOES LTDA",
+   "query": "45.235.201.164"
+  }
+ },
+ {
+  "api": "fc",
+  "asked": "BR",
+  "status": 200,
+  "credits": 1,
+  "proxy": "basic",
+  "echo": {
+   "country": "Brazil",
+   "countryCode": "BR",
+   "isp": "Level 3 Communications, Inc.",
+   "query": "104.165.159.2"
+  }
+ },
+ {
+  "api": "sb",
+  "asked": "IN",
+  "status": 200,
+  "credits": 10,
+  "echo": {
+   "country": "India",
+   "countryCode": "IN",
+   "isp": "PERFECT",
+   "query": "45.115.188.112"
+  }
+ },
+ {
+  "api": "fc",
+  "asked": "IN",
+  "status": 200,
+  "credits": 1,
+  "proxy": "basic",
+  "echo": {
+   "country": "India",
+   "countryCode": "IN",
+   "isp": "Psychz Networks",
+   "query": "150.241.208.17"
+  }
+ },
+ {
+  "api": "sb",
+  "asked": "KR",
+  "status": 200,
+  "credits": 10,
+  "echo": {
+   "country": "South Korea",
+   "countryCode": "KR",
+   "isp": "SK Broadband Co Ltd",
+   "query": "114.201.90.222"
+  }
+ },
+ {
+  "api": "fc",
+  "asked": "KR",
+  "status": 200,
+  "credits": 1,
+  "proxy": "basic",
+  "echo": {
+   "country": "South Korea",
+   "countryCode": "KR",
+   "isp": "Korea Telecom",
+   "query": "177.202.127.50"
+  }
+ },
+ {
+  "api": "sb",
+  "asked": "ZA",
+  "status": 200,
+  "credits": 10,
+  "echo": {
+   "country": "South Africa",
+   "countryCode": "ZA",
+   "isp": "Telkom SA Ltd",
+   "query": "105.226.7.174"
+  }
+ },
+ {
+  "api": "fc",
+  "asked": "ZA",
+  "status": 200,
+  "credits": 1,
+  "proxy": "basic",
+  "echo": {
+   "country": "South Africa",
+   "countryCode": "ZA",
+   "isp": "Lexistar Alliance Ltd.",
+   "query": "64.137.30.32"
+  }
+ },
+ {
+  "api": "sb",
+  "asked": "ID",
+  "status": 200,
+  "credits": 10,
+  "echo": {
+   "country": "Indonesia",
+   "countryCode": "ID",
+   "isp": "PT. INDOSAT Tbk",
+   "query": "114.12.3.248"
+  }
+ },
+ {
+  "api": "fc",
+  "asked": "ID",
+  "status": 200,
+  "credits": 1,
+  "proxy": "basic",
+  "echo": {
+   "country": "United States",
+   "countryCode": "US",
+   "isp": "Cox Communications Inc.",
+   "query": "195.64.119.145"
+  }
+ },
+ {
+  "api": "sb",
+  "asked": "AR",
+  "status": 200,
+  "credits": 10,
+  "echo": {
+   "country": "Argentina",
+   "countryCode": "AR",
+   "isp": "NSS S.A.",
+   "query": "190.210.32.223"
+  }
+ },
+ {
+  "api": "fc",
+  "asked": "AR",
+  "status": 200,
+  "credits": 1,
+  "proxy": "basic",
+  "echo": {
+   "country": "Argentina",
+   "countryCode": "AR",
+   "isp": "Latitude.sh",
+   "query": "43.229.8.120"
+  }
+ }
+]

@@ -1,0 +1,1382 @@
+[
+ {
+  "name": "get_amazon_search_results",
+  "description": "Scrape Amazon search results using ScrapingBee.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "query": {
+     "type": "string",
+     "description": "The search query to perform."
+    },
+    "add_html": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to return the HTML along with the search results."
+    },
+    "category_id": {
+     "default": "",
+     "type": "string",
+     "description": "The category ID to use for the search."
+    },
+    "country": {
+     "default": "",
+     "type": "string",
+     "description": "The country code for localization (e.g., us, uk, de).\nDo not combine with a matching domain (e.g., country=fr&domain=fr)."
+    },
+    "currency": {
+     "default": "",
+     "type": "string",
+     "description": "The currency code (ISO 4217) to display results (e.g., USD, GBP, EUR)."
+    },
+    "domain": {
+     "default": "com",
+     "type": "string",
+     "description": "The Amazon domain to use for the search (e.g., com, co.uk, de)."
+    },
+    "language": {
+     "default": "",
+     "type": "string",
+     "description": "The language code to display results (e.g., en, fr, de)."
+    },
+    "light_request": {
+     "default": true,
+     "type": "boolean",
+     "description": "Whether to use a light request or not."
+    },
+    "merchant_id": {
+     "default": "",
+     "type": "string",
+     "description": "The merchant ID to use for the search."
+    },
+    "pages": {
+     "default": 1,
+     "type": "integer",
+     "description": "The number of pages to scrape."
+    },
+    "sort_by": {
+     "default": "",
+     "type": "string",
+     "description": "The sort order to use for the search\n(most_recent, price_low_to_high, price_high_to_low, featured,\naverage_review, bestsellers)."
+    },
+    "start_page": {
+     "default": 1,
+     "type": "integer",
+     "description": "The page number to start scraping from."
+    },
+    "zip_code": {
+     "default": "",
+     "type": "string",
+     "description": "The ZIP code to use for delivery localization."
+    },
+    "autoselect_variant": {
+     "default": false,
+     "type": "boolean",
+     "description": "Automatically select the default/most-popular variant."
+    },
+    "screenshot": {
+     "default": false,
+     "type": "boolean",
+     "description": "Force a browser screenshot (returns base64 image)."
+    },
+    "tag": {
+     "default": "",
+     "type": "string",
+     "description": "Response-header label only."
+    }
+   },
+   "required": [
+    "query"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "get_amazon_product_details",
+  "description": "Scrape Amazon product details using ScrapingBee.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "query": {
+     "type": "string",
+     "description": "Search term (must be a valid 10-character ASIN code)"
+    },
+    "add_html": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to return the HTML along with the product details."
+    },
+    "autoselect_variant": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to automatically select product variant if\napplicable."
+    },
+    "country": {
+     "default": "",
+     "type": "string",
+     "description": "The country code for localization (e.g., us, uk, de).\nDo not combine with a matching domain (e.g., country=fr&domain=fr)."
+    },
+    "currency": {
+     "default": "",
+     "type": "string",
+     "description": "The currency code (ISO 4217) to display results (e.g., USD, GBP, EUR)."
+    },
+    "domain": {
+     "default": "",
+     "type": "string",
+     "description": "The Amazon domain to use for the search (e.g., com, co.uk, de)."
+    },
+    "language": {
+     "default": "",
+     "type": "string",
+     "description": "The language code to display results (e.g., en, fr, de)."
+    },
+    "light_request": {
+     "default": true,
+     "type": "boolean",
+     "description": "Whether to use a light request or not."
+    },
+    "zip_code": {
+     "default": "",
+     "type": "string",
+     "description": "The zip code to use for delivery localization."
+    },
+    "screenshot": {
+     "default": false,
+     "type": "boolean",
+     "description": "Force a browser screenshot (returns base64 image)."
+    },
+    "tag": {
+     "default": "",
+     "type": "string",
+     "description": "Response-header label only."
+    }
+   },
+   "required": [
+    "query"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "get_amazon_pricing",
+  "description": "Retrieve current Amazon product pricing and seller offers for a given ASIN.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "asin": {
+     "type": "string",
+     "description": "Required 10-character ASIN from an Amazon product URL."
+    },
+    "light_request": {
+     "default": true,
+     "type": "boolean",
+     "description": "Use a light request (default True) or browser-rendered (False)."
+    },
+    "domain": {
+     "default": "com",
+     "type": "string",
+     "description": "Amazon domain (default com)."
+    },
+    "country": {
+     "default": "",
+     "type": "string",
+     "description": "ISO country code for localization.\nDo not combine with a matching domain (e.g., country=fr&domain=fr)."
+    },
+    "zip_code": {
+     "default": "",
+     "type": "string",
+     "description": "ZIP code for delivery localization."
+    },
+    "language": {
+     "default": "",
+     "type": "string",
+     "description": "ISO language code."
+    },
+    "currency": {
+     "default": "",
+     "type": "string",
+     "description": "ISO 4217 display currency."
+    },
+    "add_html": {
+     "default": false,
+     "type": "boolean",
+     "description": "Include page HTML in the response."
+    },
+    "tag": {
+     "default": "",
+     "type": "string",
+     "description": "Response-header label only."
+    }
+   },
+   "required": [
+    "asin"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "ask_chatgpt",
+  "description": "This tool allows you to send a prompt to OpenAI's ChatGPT via ScrapingBee\nand get back the generated response.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "prompt": {
+     "type": "string",
+     "description": "The prompt to send to ChatGPT."
+    },
+    "search": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to enable web search capability for the prompt."
+    },
+    "add_html": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to include the full HTML of the page in the results."
+    },
+    "country_code": {
+     "default": "",
+     "type": "string",
+     "description": "ISO country code the request should originate from\n(affects web results when search is enabled)."
+    },
+    "tag": {
+     "default": "",
+     "type": "string",
+     "description": "Response-header label only."
+    }
+   },
+   "required": [
+    "prompt"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "fast_search",
+  "description": "Search the web using ScrapingBee's Fast Search API and return structured\nresults. This is the PRIMARY tool for web searches \u00e2\u0080\u0094 it returns clean\norganic results and top stories in under one second at a lower credit cost.\n\nUSE THIS TOOL FIRST for any general web search. Only fall back to\nget_google_search_results if you need specialized search types such as\nnews, maps, Google Lens, shopping, image search, or Google AI mode.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "search": {
+     "type": "string",
+     "description": "The search query to use.\nMake sure to URL-encode special characters such as :, & or +."
+    },
+    "country_code": {
+     "default": "us",
+     "type": "string",
+     "description": "ISO 3166-1 alpha-2 country code to localize results\n(Example: us, fr, de, in, gb, br, etc.)."
+    },
+    "language": {
+     "default": "en",
+     "type": "string",
+     "description": "Language of the search results (Example: en, fr, de, etc.)."
+    },
+    "page": {
+     "default": 1,
+     "type": "integer",
+     "description": "The page number to return. Default is 1,\nuse page=2 for the second page, etc."
+    },
+    "tag": {
+     "default": "",
+     "type": "string",
+     "description": "Response-header label only."
+    }
+   },
+   "required": [
+    "search"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "ask_gemini",
+  "description": "Ask Gemini through ScrapingBee and receive citation objects when available.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "prompt": {
+     "type": "string",
+     "description": "The prompt to send to Gemini."
+    },
+    "add_html": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to return the full HTML of searched pages."
+    },
+    "country_code": {
+     "default": "",
+     "type": "string",
+     "description": "ISO country code to set request geolocation."
+    },
+    "tag": {
+     "default": "",
+     "type": "string",
+     "description": "Response-header label only."
+    }
+   },
+   "required": [
+    "prompt"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "get_google_search_results",
+  "description": "This is a FALLBACK tool \u00e2\u0080\u0094\nuse fast_search first for general web searches. Only use this tool when\nyou need specialized search types that fast_search does not support:\nnews, maps, Google Lens, shopping, image search, or Google AI mode.\n\nScrape Google search results using ScrapingBee and return the results.\nThis tool can scrape normal results, news results, maps results, search\nusing google lens, shopping related results, image results, and get the result from\nGoogle's AI mode.\nIt can even return the HTML along with the search results.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "search": {
+     "type": "string",
+     "description": "The search query to use."
+    },
+    "add_html": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to return the HTML along with the search results."
+    },
+    "country_code": {
+     "default": "us",
+     "type": "string",
+     "description": "The country code to use for the search\n(Example: us, fr, de, etc.)."
+    },
+    "device": {
+     "default": "desktop",
+     "type": "string",
+     "description": "The device to use for the search (desktop, mobile)."
+    },
+    "extra_params": {
+     "default": "",
+     "type": "string",
+     "description": "Extra parameters to pass to the search (Example: tbs=qdr:d&udm=7)."
+    },
+    "language": {
+     "default": "en",
+     "type": "string",
+     "description": "The language to use for the search (Example: en, fr, de, etc.)."
+    },
+    "light_request": {
+     "default": true,
+     "type": "boolean",
+     "description": "Whether to use a light request or not."
+    },
+    "nfpr": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to disable Google's autocorrection feature or not."
+    },
+    "page": {
+     "default": 1,
+     "type": "integer",
+     "description": "The page number to return."
+    },
+    "pages": {
+     "default": 1,
+     "type": "integer",
+     "description": "Number of pages to aggregate (max 10, default 1)."
+    },
+    "search_type": {
+     "default": "classic",
+     "type": "string",
+     "description": "The search type to use (classic: normal results,\nnews: news results [not available if device is mobile], maps: maps results,\nlens: search using google lens [requires image url as search parameter],\nshopping: shopping related results, images: image results,\nai_mode: get the result from Google's AI mode, ads: paid-ad results)."
+    },
+    "date_range": {
+     "default": "",
+     "type": "string",
+     "description": "Filter by date range: past_hour, past_day, past_week,\npast_month, past_year. Only for classic, news, and images."
+    },
+    "latitude": {
+     "anyOf": [
+      {
+       "type": "number"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Latitude in decimal degrees for geographic searches."
+    },
+    "longitude": {
+     "anyOf": [
+      {
+       "type": "number"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Longitude in decimal degrees for geographic searches."
+    },
+    "radius": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Radius in meters (requires latitude and longitude)."
+    },
+    "sort_by": {
+     "default": "",
+     "type": "string",
+     "description": "Shopping sort order: relevance, reviews, price_asc, price_desc."
+    },
+    "min_price": {
+     "anyOf": [
+      {
+       "type": "number"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Shopping minimum price filter."
+    },
+    "max_price": {
+     "anyOf": [
+      {
+       "type": "number"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Shopping maximum price filter."
+    },
+    "tag": {
+     "default": "",
+     "type": "string",
+     "description": "Response-header label only."
+    }
+   },
+   "required": [
+    "search"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "get_page_text",
+  "description": "Scrape a URL using ScrapingBee and return the page content in\nMarkdown or Text format.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u00e2\u0080\u0094\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "url": {
+     "type": "string",
+     "description": "The URL of the page to scrape."
+    },
+    "return_page_markdown": {
+     "default": true,
+     "type": "boolean",
+     "description": "Whether to return the page content in Markdown format."
+    },
+    "return_page_text": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to return the page content in Text format."
+    },
+    "auto_mode": {
+     "default": true,
+     "type": "boolean",
+     "description": "On by default \u00e2\u0080\u0094 ScrapingBee automatically picks the cheapest\nconfiguration that successfully fetches the page, escalating proxy\nstrength only as needed (you are charged only for the winning\nconfig). To choose a configuration yourself instead, use one of:\nauto_mode=False for the classic tier (no proxy, cheapest),\npremium_proxy=True, or stealth_proxy=True \u00e2\u0080\u0094 the two proxy flags\noverride auto_mode on their own, so auto_mode=False is only needed\nfor the classic tier. Setting render_js also switches to manual."
+    },
+    "max_cost": {
+     "default": 0,
+     "type": "integer",
+     "description": "Optional credit ceiling for auto_mode (integer >= 1). The request\nwill not escalate to a configuration costing more than this many credits.\n0 means no ceiling. Ignored unless auto_mode is True."
+    },
+    "premium_proxy": {
+     "default": false,
+     "type": "boolean",
+     "description": "Manual option: use a premium proxy (middle tier of\nclassic/premium/stealth). Setting this disables auto_mode."
+    },
+    "stealth_proxy": {
+     "default": false,
+     "type": "boolean",
+     "description": "Manual option: use a stealth proxy (strongest tier of\nclassic/premium/stealth). Setting this disables auto_mode."
+    },
+    "custom_google": {
+     "default": false,
+     "type": "boolean",
+     "description": "Set to True if the url is a google domain in the following\nformat: <subdomain>.google.<top-level-domain>\n(Example: translate.google.com, mail.google.com, www.google.co.in etc)"
+    },
+    "country_code": {
+     "default": "",
+     "type": "string",
+     "description": "ISO 3166-1 alpha-2 country code (e.g. \"fr\", \"us\") to\nroute the request through an IP in that country. Only takes effect\nwhen premium_proxy or stealth_proxy is True."
+    },
+    "render_js": {
+     "anyOf": [
+      {
+       "type": "boolean"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Whether to use headless-browser rendering.\nOmit to use the API default (true). Setting this explicitly\nswitches the request to manual configuration (disables auto_mode)."
+    },
+    "wait": {
+     "default": 0,
+     "type": "integer",
+     "description": "Milliseconds to wait after page load (0\u00e2\u0080\u009335000)."
+    },
+    "wait_for": {
+     "default": "",
+     "type": "string",
+     "description": "CSS or XPath selector to wait for before returning."
+    },
+    "wait_browser": {
+     "default": "domcontentloaded",
+     "type": "string",
+     "description": "domcontentloaded (default), load, networkidle0, networkidle2."
+    },
+    "block_resources": {
+     "default": true,
+     "type": "boolean",
+     "description": "Block images/CSS to speed up rendering."
+    },
+    "window_width": {
+     "default": 1920,
+     "type": "integer",
+     "description": "Viewport width (default 1920)."
+    },
+    "window_height": {
+     "default": 1080,
+     "type": "integer",
+     "description": "Viewport height (default 1080)."
+    },
+    "session_id": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Integer 0\u00e2\u0080\u009310000000 to reuse an IP for up to 5 minutes."
+    },
+    "cookies": {
+     "default": "",
+     "type": "string",
+     "description": "Semicolon-separated cookies to send to the target."
+    },
+    "timeout": {
+     "default": 140000,
+     "type": "integer",
+     "description": "Request timeout in milliseconds (1000\u00e2\u0080\u0093140000, default 140000)."
+    },
+    "device": {
+     "default": "desktop",
+     "type": "string",
+     "description": "desktop (default) or mobile."
+    },
+    "js_scenario": {
+     "default": "",
+     "type": "string",
+     "description": "Stringified JSON object of browser interaction instructions."
+    },
+    "ai_query": {
+     "default": "",
+     "type": "string",
+     "description": "Natural-language question for AI extraction."
+    },
+    "ai_selector": {
+     "default": "",
+     "type": "string",
+     "description": "CSS selector to focus AI extraction on part of the page."
+    }
+   },
+   "required": [
+    "url"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "get_page_html",
+  "description": "Scrape a URL using ScrapingBee and return the page content in HTML.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u00e2\u0080\u0094\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "url": {
+     "type": "string",
+     "description": "The URL of the page to scrape."
+    },
+    "auto_mode": {
+     "default": true,
+     "type": "boolean",
+     "description": "On by default \u00e2\u0080\u0094 ScrapingBee automatically picks the cheapest\nconfiguration that successfully fetches the page, escalating proxy\nstrength only as needed (you are charged only for the winning\nconfig). To choose a configuration yourself instead, use one of:\nauto_mode=False for the classic tier (no proxy, cheapest),\npremium_proxy=True, or stealth_proxy=True \u00e2\u0080\u0094 the two proxy flags\noverride auto_mode on their own, so auto_mode=False is only needed\nfor the classic tier. Setting render_js also switches to manual."
+    },
+    "max_cost": {
+     "default": 0,
+     "type": "integer",
+     "description": "Optional credit ceiling for auto_mode (integer >= 1). The request\nwill not escalate to a configuration costing more than this many credits.\n0 means no ceiling. Ignored unless auto_mode is True."
+    },
+    "premium_proxy": {
+     "default": false,
+     "type": "boolean",
+     "description": "Manual option: use a premium proxy (middle tier of\nclassic/premium/stealth). Setting this disables auto_mode."
+    },
+    "stealth_proxy": {
+     "default": false,
+     "type": "boolean",
+     "description": "Manual option: use a stealth proxy (strongest tier of\nclassic/premium/stealth). Setting this disables auto_mode."
+    },
+    "custom_google": {
+     "default": false,
+     "type": "boolean",
+     "description": "Set to True if the url is a google domain in the following\nformat: <subdomain>.google.<top-level-domain>\n(Example: translate.google.com, mail.google.com, www.google.co.in etc)"
+    },
+    "country_code": {
+     "default": "",
+     "type": "string",
+     "description": "ISO 3166-1 alpha-2 country code (e.g. \"fr\", \"us\") to\nroute the request through an IP in that country. Only takes effect\nwhen premium_proxy or stealth_proxy is True."
+    },
+    "render_js": {
+     "anyOf": [
+      {
+       "type": "boolean"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Whether to use headless-browser rendering.\nOmit to use the API default (true). Setting this explicitly\nswitches the request to manual configuration (disables auto_mode)."
+    },
+    "wait": {
+     "default": 0,
+     "type": "integer",
+     "description": "Milliseconds to wait after page load (0\u00e2\u0080\u009335000)."
+    },
+    "wait_for": {
+     "default": "",
+     "type": "string",
+     "description": "CSS or XPath selector to wait for before returning."
+    },
+    "wait_browser": {
+     "default": "domcontentloaded",
+     "type": "string",
+     "description": "domcontentloaded (default), load, networkidle0, networkidle2."
+    },
+    "block_resources": {
+     "default": true,
+     "type": "boolean",
+     "description": "Block images/CSS to speed up rendering."
+    },
+    "window_width": {
+     "default": 1920,
+     "type": "integer",
+     "description": "Viewport width (default 1920)."
+    },
+    "window_height": {
+     "default": 1080,
+     "type": "integer",
+     "description": "Viewport height (default 1080)."
+    },
+    "session_id": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Integer 0\u00e2\u0080\u009310000000 to reuse an IP for up to 5 minutes."
+    },
+    "cookies": {
+     "default": "",
+     "type": "string",
+     "description": "Semicolon-separated cookies to send to the target."
+    },
+    "timeout": {
+     "default": 140000,
+     "type": "integer",
+     "description": "Request timeout in milliseconds (1000\u00e2\u0080\u0093140000, default 140000)."
+    },
+    "device": {
+     "default": "desktop",
+     "type": "string",
+     "description": "desktop (default) or mobile."
+    },
+    "js_scenario": {
+     "default": "",
+     "type": "string",
+     "description": "Stringified JSON object of browser interaction instructions."
+    },
+    "ai_query": {
+     "default": "",
+     "type": "string",
+     "description": "Natural-language question for AI extraction."
+    },
+    "ai_selector": {
+     "default": "",
+     "type": "string",
+     "description": "CSS selector to focus AI extraction on part of the page."
+    }
+   },
+   "required": [
+    "url"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "extract_page_data",
+  "description": "Scrape a URL using ScrapingBee and extract specific data using\nCSS or XPath selectors.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u00e2\u0080\u0094\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "url": {
+     "type": "string",
+     "description": "The URL of the page to scrape."
+    },
+    "extract_rules": {
+     "type": "string",
+     "description": "A JSON string defining extraction rules.\n\n          SIMPLE SYNTAX:\n          Use {\"key_name\": \"css_or_xpath_selector\"} format.\n          - CSS selector example: {\"title\": \"h1\", \"price\": \"span.price\"}\n          - XPath selector example:\n                {\"title\": \"//h1\", \"items\": \"//div[@class='item']\"}\n          - Extract attribute value of an element using @<attribute>\n                or if you are using extended syntax <element>@<attribute>,\n                for example: {\"image\": \"img@src\"},\n                \"link\": {\"selector\": \"a\",\"output\": \"@href\"}\n\n          Note: Selectors starting with \"/\" are treated as XPath,\n          otherwise CSS.\n\n          EXTENDED SYNTAX:\n          For more control, use a dict with these options:\n          - \"selector\": CSS or XPath selector string (required)\n          - \"type\": \"item\" (single element, default) or\n                \"list\" (multiple elements)\n          - \"output\": It is also possible to add extraction rules inside\n                the output option in order to create powerful extractors.\n\n          Extended example:\n           {\n                \"title\" : \"h1\",\n                \"subtitle\" : \"#subtitle\",\n                \"articles\": {\n                    \"selector\": \".card\",\n                    \"type\": \"list\",\n                    \"output\": {\n                        \"title\": \".post-title\",\n                        \"link\": {\n                            \"selector\": \".post-title\",\n                            \"output\": \"@href\"\n                        },\n                        \"description\": \".post-description\"\n                    }\n                }\n            }"
+    },
+    "auto_mode": {
+     "default": true,
+     "type": "boolean",
+     "description": "On by default \u00e2\u0080\u0094 ScrapingBee automatically picks the cheapest\nconfiguration that successfully fetches the page, escalating proxy\nstrength only as needed (you are charged only for the winning\nconfig). To choose a configuration yourself instead, use one of:\nauto_mode=False for the classic tier (no proxy, cheapest),\npremium_proxy=True, or stealth_proxy=True \u00e2\u0080\u0094 the two proxy flags\noverride auto_mode on their own, so auto_mode=False is only needed\nfor the classic tier. Setting render_js also switches to manual."
+    },
+    "max_cost": {
+     "default": 0,
+     "type": "integer",
+     "description": "Optional credit ceiling for auto_mode (integer >= 1). The request\nwill not escalate to a configuration costing more than this many credits.\n0 means no ceiling. Ignored unless auto_mode is True."
+    },
+    "premium_proxy": {
+     "default": false,
+     "type": "boolean",
+     "description": "Manual option: use a premium proxy (middle tier of\nclassic/premium/stealth). Setting this disables auto_mode."
+    },
+    "stealth_proxy": {
+     "default": false,
+     "type": "boolean",
+     "description": "Manual option: use a stealth proxy (strongest tier of\nclassic/premium/stealth). Setting this disables auto_mode."
+    },
+    "custom_google": {
+     "default": false,
+     "type": "boolean",
+     "description": "Set to True if the url is a google domain in the following\nformat: <subdomain>.google.<top-level-domain>\n(Example: translate.google.com, mail.google.com, www.google.co.in etc)"
+    },
+    "country_code": {
+     "default": "",
+     "type": "string",
+     "description": "ISO 3166-1 alpha-2 country code (e.g. \"fr\", \"us\") to\nroute the request through an IP in that country. Only takes effect\nwhen premium_proxy or stealth_proxy is True."
+    },
+    "render_js": {
+     "anyOf": [
+      {
+       "type": "boolean"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Whether to use headless-browser rendering. Setting this\nexplicitly switches the request to manual configuration\n(disables auto_mode)."
+    },
+    "wait": {
+     "default": 0,
+     "type": "integer",
+     "description": "Milliseconds to wait after page load (0\u00e2\u0080\u009335000)."
+    },
+    "wait_for": {
+     "default": "",
+     "type": "string",
+     "description": "CSS or XPath selector to wait for before returning."
+    },
+    "wait_browser": {
+     "default": "domcontentloaded",
+     "type": "string",
+     "description": "domcontentloaded (default), load, networkidle0, networkidle2."
+    },
+    "block_resources": {
+     "default": true,
+     "type": "boolean",
+     "description": "Block images/CSS to speed up rendering."
+    },
+    "window_width": {
+     "default": 1920,
+     "type": "integer",
+     "description": "Viewport width (default 1920)."
+    },
+    "window_height": {
+     "default": 1080,
+     "type": "integer",
+     "description": "Viewport height (default 1080)."
+    },
+    "session_id": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Integer 0\u00e2\u0080\u009310000000 to reuse an IP for up to 5 minutes."
+    },
+    "cookies": {
+     "default": "",
+     "type": "string",
+     "description": "Semicolon-separated cookies to send to the target."
+    },
+    "timeout": {
+     "default": 140000,
+     "type": "integer",
+     "description": "Request timeout in milliseconds (1000\u00e2\u0080\u0093140000, default 140000)."
+    },
+    "device": {
+     "default": "desktop",
+     "type": "string",
+     "description": "desktop (default) or mobile."
+    },
+    "js_scenario": {
+     "default": "",
+     "type": "string",
+     "description": "Stringified JSON object of browser interaction instructions."
+    },
+    "ai_extract_rules": {
+     "default": "",
+     "type": "string",
+     "description": "JSON string of AI extraction rules."
+    },
+    "ai_selector": {
+     "default": "",
+     "type": "string",
+     "description": "CSS selector to focus AI extraction on part of the page."
+    },
+    "json_response": {
+     "default": false,
+     "type": "boolean",
+     "description": "Return the full JSON envelope instead of the raw body."
+    }
+   },
+   "required": [
+    "url",
+    "extract_rules"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "get_screenshot",
+  "description": "Scrape a URL using ScrapingBee and return it's screenshot.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u00e2\u0080\u0094\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "url": {
+     "type": "string",
+     "description": "The URL of the page to scrape."
+    },
+    "screenshot_full_page": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to take a screenshot of the full page\nor just the viewport."
+    },
+    "screenshot_selector": {
+     "default": "",
+     "type": "string",
+     "description": "A CSS selector to take a screenshot of a specific element."
+    },
+    "premium_proxy": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to use a premium proxy for the request.\nUse it only if you are getting blocked by the website,\nthat is when you get a 500 status code."
+    },
+    "stealth_proxy": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to use a stealth proxy for the request.\nUse it only if you are getting blocked by the website\nwhile using premium_proxy, that is when you get a 500 status code."
+    },
+    "custom_google": {
+     "default": false,
+     "type": "boolean",
+     "description": "Set to True if the url is a google domain in the following\nformat: <subdomain>.google.<top-level-domain>\n(Example: translate.google.com, mail.google.com, www.google.co.in etc)"
+    },
+    "country_code": {
+     "default": "",
+     "type": "string",
+     "description": "ISO 3166-1 alpha-2 country code (e.g. \"fr\", \"us\") to\nroute the request through an IP in that country. Only takes effect\nwhen premium_proxy or stealth_proxy is True."
+    },
+    "render_js": {
+     "anyOf": [
+      {
+       "type": "boolean"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Whether to use headless-browser rendering."
+    },
+    "wait": {
+     "default": 0,
+     "type": "integer",
+     "description": "Milliseconds to wait after page load (0\u00e2\u0080\u009335000)."
+    },
+    "wait_for": {
+     "default": "",
+     "type": "string",
+     "description": "CSS or XPath selector to wait for before returning."
+    },
+    "wait_browser": {
+     "default": "domcontentloaded",
+     "type": "string",
+     "description": "domcontentloaded (default), load, networkidle0, networkidle2."
+    },
+    "block_resources": {
+     "default": false,
+     "type": "boolean",
+     "description": "Block images/CSS to speed up rendering."
+    },
+    "window_width": {
+     "default": 1920,
+     "type": "integer",
+     "description": "Viewport width (default 1920)."
+    },
+    "window_height": {
+     "default": 1080,
+     "type": "integer",
+     "description": "Viewport height (default 1080)."
+    },
+    "session_id": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Integer 0\u00e2\u0080\u009310000000 to reuse an IP for up to 5 minutes."
+    },
+    "cookies": {
+     "default": "",
+     "type": "string",
+     "description": "Semicolon-separated cookies to send to the target."
+    },
+    "timeout": {
+     "default": 140000,
+     "type": "integer",
+     "description": "Request timeout in milliseconds (1000\u00e2\u0080\u0093140000, default 140000)."
+    },
+    "device": {
+     "default": "desktop",
+     "type": "string",
+     "description": "desktop (default) or mobile."
+    },
+    "js_scenario": {
+     "default": "",
+     "type": "string",
+     "description": "Stringified JSON object of browser interaction instructions."
+    },
+    "json_response": {
+     "default": false,
+     "type": "boolean",
+     "description": "Deprecated, removed in Version 3. Return the full JSON\nenvelope (page content plus the base64 image under its\n\"screenshot\" key) instead of the raw image."
+    }
+   },
+   "required": [
+    "url"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "get_file",
+  "description": "Fetches a file from a URL and returns it in a format suitable for FastMcP.\n\nThis tool can be used to fetch any file type, including images, PDFs, etc.\nThe framework will handle the encoding and packaging of the file.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u00e2\u0080\u0094\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "url": {
+     "type": "string",
+     "description": "The URL of the file to fetch."
+    },
+    "premium_proxy": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to use a premium proxy for the request.\nUse it only if you are getting blocked by the website."
+    },
+    "custom_google": {
+     "default": false,
+     "type": "boolean",
+     "description": "Set to True if the url is a google domain in the following\nformat: <subdomain>.google.<top-level-domain>\n(Example: translate.google.com, mail.google.com, www.google.co.in etc)"
+    },
+    "country_code": {
+     "default": "",
+     "type": "string",
+     "description": "ISO 3166-1 alpha-2 country code (e.g. \"fr\", \"us\") to\nroute the request through an IP in that country. Only takes effect\nwhen premium_proxy is True."
+    },
+    "render_js": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to use headless-browser rendering (default False)."
+    },
+    "session_id": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Integer 0\u00e2\u0080\u009310000000 to reuse an IP for up to 5 minutes."
+    },
+    "cookies": {
+     "default": "",
+     "type": "string",
+     "description": "Semicolon-separated cookies to send to the target."
+    },
+    "timeout": {
+     "default": 140000,
+     "type": "integer",
+     "description": "Request timeout in milliseconds (1000\u00e2\u0080\u0093140000, default 140000)."
+    },
+    "device": {
+     "default": "desktop",
+     "type": "string",
+     "description": "desktop (default) or mobile."
+    }
+   },
+   "required": [
+    "url"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "get_scrapingbee_usage",
+  "description": "Read real-time credit and concurrency usage for the authenticated\nScrapingBee account.\n\nNote: This endpoint is rate-limited to 6 calls per minute and does not\ncount against the account's concurrency limit.\n\nReturns:\n    max_api_credit, used_api_credit, max_concurrency, current_concurrency,\n    renewal_subscription_date.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {},
+   "type": "object"
+  }
+ },
+ {
+  "name": "get_walmart_search_results",
+  "description": "Scrape Walmart search results using ScrapingBee.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "query": {
+     "type": "string",
+     "description": "The search query to perform."
+    },
+    "add_html": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to return the HTML along with the search results."
+    },
+    "delivery_zip": {
+     "default": "",
+     "type": "string",
+     "description": "The zip code to use for delivery localization."
+    },
+    "device": {
+     "default": "desktop",
+     "type": "string",
+     "description": "The device to use for the search (desktop, mobile, tablet)."
+    },
+    "domain": {
+     "default": "",
+     "type": "string",
+     "description": "The domain to use for the search\n(Example: com, ca, com.mx, etc.) for localization."
+    },
+    "fulfillment_speed": {
+     "default": "",
+     "type": "string",
+     "description": "The fulfillment speed to use for the search\n(today, tomorrow, 2_days, anytime)."
+    },
+    "fulfillment_type": {
+     "default": "",
+     "type": "string",
+     "description": "The fulfillment type to use for the search (in_store)."
+    },
+    "light_request": {
+     "default": true,
+     "type": "boolean",
+     "description": "Whether to use a light request or not."
+    },
+    "max_price": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "The maximum price to use for the search."
+    },
+    "min_price": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "The minimum price to use for the search."
+    },
+    "sort_by": {
+     "default": "best_match",
+     "type": "string",
+     "description": "The sort order to use for the search\n(best_match, price_low, price_high, best_seller)."
+    },
+    "store_id": {
+     "default": "",
+     "type": "string",
+     "description": "Specific Walmart store ID for localization."
+    },
+    "start_page": {
+     "default": 1,
+     "type": "integer",
+     "description": "The page number to return (default 1)."
+    },
+    "screenshot": {
+     "default": false,
+     "type": "boolean",
+     "description": "Force a browser screenshot (returns base64 image)."
+    },
+    "tag": {
+     "default": "",
+     "type": "string",
+     "description": "Response-header label only."
+    }
+   },
+   "required": [
+    "query"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "get_walmart_product_details",
+  "description": "Scrape Walmart product details using ScrapingBee.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "product_id": {
+     "type": "string",
+     "description": "The unique identifier for the Walmart product."
+    },
+    "add_html": {
+     "default": false,
+     "type": "boolean",
+     "description": "Whether to return the HTML along with the product details."
+    },
+    "delivery_zip": {
+     "default": "",
+     "type": "string",
+     "description": "The zip code to use for delivery localization."
+    },
+    "device": {
+     "default": "desktop",
+     "type": "string",
+     "description": "The device to use for the request (desktop, mobile, tablet)."
+    },
+    "domain": {
+     "default": "",
+     "type": "string",
+     "description": "The domain to use for the search\n(Example: com, ca, com.mx, etc.) for localization."
+    },
+    "light_request": {
+     "default": true,
+     "type": "boolean",
+     "description": "Whether to use a light request or not."
+    },
+    "store_id": {
+     "default": "",
+     "type": "string",
+     "description": "Specific Walmart store ID for localization."
+    },
+    "screenshot": {
+     "default": false,
+     "type": "boolean",
+     "description": "Force a browser screenshot (returns base64 image)."
+    },
+    "tag": {
+     "default": "",
+     "type": "string",
+     "description": "Response-header label only."
+    }
+   },
+   "required": [
+    "product_id"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "get_youtube_search_results",
+  "description": "Search YouTube and return structured results.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "search": {
+     "type": "string",
+     "description": "The search query."
+    },
+    "upload_date": {
+     "default": "",
+     "type": "string",
+     "description": "Filter by date:\n'today', 'last_hour', 'this_week', 'this_month', 'this_year'."
+    },
+    "result_type": {
+     "default": "",
+     "type": "string",
+     "description": "Filter by type: 'video', 'channel', 'playlist', 'movie'."
+    },
+    "duration": {
+     "default": "",
+     "type": "string",
+     "description": "Filter by duration: '<4' (short), '4-20' (medium), '>20' (long)."
+    },
+    "sort_by": {
+     "default": "relevance",
+     "type": "string",
+     "description": "Sort order:\n'relevance' (default), 'rating', 'view_count', 'upload_date'."
+    },
+    "hd": {
+     "default": false,
+     "type": "boolean",
+     "description": "Return only HD videos."
+    },
+    "is_4k": {
+     "default": false,
+     "type": "boolean",
+     "description": "Return only 4K videos."
+    },
+    "subtitles": {
+     "default": false,
+     "type": "boolean",
+     "description": "Return only videos with subtitles/captions."
+    },
+    "creative_commons": {
+     "default": false,
+     "type": "boolean",
+     "description": "Return only videos with Creative Commons license."
+    },
+    "live": {
+     "default": false,
+     "type": "boolean",
+     "description": "Return only live streams."
+    },
+    "is_360": {
+     "default": false,
+     "type": "boolean",
+     "description": "Return only 360-degree videos."
+    },
+    "is_3d": {
+     "default": false,
+     "type": "boolean",
+     "description": "Return only 3D videos."
+    },
+    "hdr": {
+     "default": false,
+     "type": "boolean",
+     "description": "Return only HDR videos."
+    },
+    "location": {
+     "default": false,
+     "type": "boolean",
+     "description": "Return only videos with location metadata."
+    },
+    "purchased": {
+     "default": false,
+     "type": "boolean",
+     "description": "Return only purchased movies."
+    },
+    "vr180": {
+     "default": false,
+     "type": "boolean",
+     "description": "Return only VR180 videos."
+    },
+    "tag": {
+     "default": "",
+     "type": "string",
+     "description": "Response-header label only."
+    }
+   },
+   "required": [
+    "search"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "get_youtube_video_metadata",
+  "description": "Fetch structured metadata for a YouTube video including title, description,\nviews, likes, channel info, and technical details.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "video_id": {
+     "type": "string",
+     "description": "The unique YouTube video ID (e.g., 'rfscVS0vtbw')."
+    }
+   },
+   "required": [
+    "video_id"
+   ],
+   "type": "object"
+  }
+ },
+ {
+  "name": "get_youtube_video_subtitles",
+  "description": "Retrieve subtitles for one YouTube video.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "video_id": {
+     "type": "string",
+     "description": "The unique YouTube video ID."
+    },
+    "language": {
+     "default": "en",
+     "type": "string",
+     "description": "Language code (e.g., 'en', 'es', 'fr'). Default is 'en'."
+    },
+    "subtitle_origin": {
+     "default": "auto_generated",
+     "type": "string",
+     "description": "'auto_generated' (default) or 'uploader_provided'."
+    },
+    "tag": {
+     "default": "",
+     "type": "string",
+     "description": "Response-header label only."
+    }
+   },
+   "required": [
+    "video_id"
+   ],
+   "type": "object"
+  }
+ }
+]

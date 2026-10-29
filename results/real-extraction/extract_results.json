@@ -1,0 +1,327 @@
+[
+ {
+  "api": "sb",
+  "id": "protected-etsy-1",
+  "got": {
+   "name": "Handmade Ceramic Mug Set of 2, Stoneware Pottery Mugs, Coffee Lover Gift, 5 oz",
+   "price": 59.5
+  },
+  "credits": 30,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-etsy-1",
+  "got": {
+   "error": "{'success': False, 'code': 'SCRAPE_ALL_ENGINES_FAILED', 'error': \"All scraping engines failed to retrieve content from this URL. Engines tried: [fire-engine;chrome-cdp;stealth, fire-engine(retry);chro"
+  },
+  "credits": 0,
+  "price_ok": false,
+  "name_ok": false
+ },
+ {
+  "api": "sb",
+  "id": "protected-etsy-2",
+  "got": {
+   "name": "Speckled Ceramic Espresso Cup // Small 5oz Ceramic Mug \u2014 Handmade Pottery",
+   "price": 34.0
+  },
+  "credits": 30,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-etsy-2",
+  "got": {
+   "error": "{'success': False, 'code': 'SCRAPE_ALL_ENGINES_FAILED', 'error': \"All scraping engines failed to retrieve content from this URL. Engines tried: [fire-engine;chrome-cdp;stealth, fire-engine(retry);chro"
+  },
+  "credits": 0,
+  "price_ok": false,
+  "name_ok": false
+ },
+ {
+  "api": "sb",
+  "id": "protected-etsy-3",
+  "got": {
+   "name": "Personalised Black Speckle Ceramic Mug | Handmade Mug | Handmade Mug | Handmade Gift | Stoneware Mug",
+   "price": 32.05
+  },
+  "credits": 30,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-etsy-3",
+  "got": {
+   "error": "{'success': False, 'code': 'SCRAPE_ALL_ENGINES_FAILED', 'error': \"All scraping engines failed to retrieve content from this URL. Engines tried: [fire-engine;chrome-cdp;stealth, fire-engine(retry);chro"
+  },
+  "credits": 0,
+  "price_ok": false,
+  "name_ok": false
+ },
+ {
+  "api": "sb",
+  "id": "protected-etsy-4",
+  "got": {
+   "name": "Handmade Ceramic Mug Set: One-of-a-kind. Earthenware, Food Safe.",
+   "price": 45.0
+  },
+  "credits": 30,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-etsy-4",
+  "got": {
+   "error": "{'success': False, 'code': 'SCRAPE_ALL_ENGINES_FAILED', 'error': \"All scraping engines failed to retrieve content from this URL. Engines tried: [fire-engine;chrome-cdp;stealth, fire-engine(retry);chro"
+  },
+  "credits": 0,
+  "price_ok": false,
+  "name_ok": false
+ },
+ {
+  "api": "sb",
+  "id": "protected-etsy-5",
+  "got": {
+   "name": "Handmade Stoneware Ceramic Mug: 6oz Coffee, Tea, Cappuccino",
+   "price": 35.4
+  },
+  "credits": 30,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-etsy-5",
+  "got": {
+   "error": "{'success': False, 'code': 'SCRAPE_ALL_ENGINES_FAILED', 'error': \"All scraping engines failed to retrieve content from this URL. Engines tried: [fire-engine;chrome-cdp;stealth, fire-engine(retry);chro"
+  },
+  "credits": 0,
+  "price_ok": false,
+  "name_ok": false
+ },
+ {
+  "api": "sb",
+  "id": "protected-zillow-1",
+  "got": {
+   "name": "221 Park Ln",
+   "price": 2590000
+  },
+  "credits": 6,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-zillow-1",
+  "got": {
+   "name": "221 Park Ln, Austin, TX 78704",
+   "price": 2590000
+  },
+  "credits": 5,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "sb",
+  "id": "protected-zillow-2",
+  "got": {
+   "name": "1410 E 3rd St #A,\u00a0Austin, TX 78702",
+   "price": 1418800
+  },
+  "credits": 6,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-zillow-2",
+  "got": {
+   "name": "1410 E 3rd St #A, Austin, TX 78702",
+   "price": 1418800
+  },
+  "credits": 5,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "sb",
+  "id": "protected-zillow-3",
+  "got": {
+   "name": "1117 San Augustine Dr, Austin, TX 78733",
+   "price": 1070000
+  },
+  "credits": 6,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-zillow-3",
+  "got": {
+   "name": "1117 San Augustine Dr",
+   "price": 1070000
+  },
+  "credits": 5,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "sb",
+  "id": "protected-zillow-4",
+  "got": {
+   "name": "606 Josephine St",
+   "price": 2250000
+  },
+  "credits": 6,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-zillow-4",
+  "got": {
+   "name": "606 Josephine St, Austin, TX 78704",
+   "price": 2250000
+  },
+  "credits": 5,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "sb",
+  "id": "protected-zillow-5",
+  "got": {
+   "name": "1905 Wood Acre Ln, Austin, TX 78733",
+   "price": 4950000
+  },
+  "credits": 6,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-zillow-5",
+  "got": {
+   "name": "1905 Wood Acre Ln",
+   "price": 4950000
+  },
+  "credits": 5,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "sb",
+  "id": "protected-walmart-1",
+  "got": {
+   "name": "AIRMSEN 12-Cup Drip Coffee Maker with K Cup Combo, Programmable Coffee Machine with 1-4 Cup Setting, Single Serve or Coffee Pot, Auto Shut-off, Spill-Free Spout",
+   "price": 89.99
+  },
+  "credits": 15,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-walmart-1",
+  "got": {
+   "name": "AIRMSEN 12-Cup Drip Coffee Maker with K Cup Combo, Programmable Coffee Machine with 1-4 Cup Setting, Single Serve or Coffee Pot, Auto Shut-off, Spill-Free Spout",
+   "price": 89.99
+  },
+  "credits": 5,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "sb",
+  "id": "protected-walmart-2",
+  "got": {
+   "name": "Beautiful by Drew Barrymore Perfect Grind Programmable Single-Serve Coffee Maker with Built-In Grinder, White Icing",
+   "price": 79.0
+  },
+  "credits": 15,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-walmart-2",
+  "got": {
+   "name": "Beautiful by Drew Barrymore Perfect Grind Programmable Single-Serve Coffee Maker with Built-In Grinder, White Icing",
+   "price": 79
+  },
+  "credits": 5,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "sb",
+  "id": "protected-walmart-3",
+  "got": {
+   "name": "Mainstays Black 12-Cup Drip Coffee Maker",
+   "price": 16.88
+  },
+  "credits": 15,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-walmart-3",
+  "got": {
+   "name": "Mainstays Black 12-Cup Drip Coffee Maker",
+   "price": 16.88
+  },
+  "credits": 5,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "sb",
+  "id": "protected-walmart-4",
+  "got": {
+   "name": "Savour Dual Coffee Maker, Programmable 12-Cup Coffee Pot & Single Serve Coffee Machine",
+   "price": 119.99
+  },
+  "credits": 15,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-walmart-4",
+  "got": {
+   "name": "Savour Dual Coffee Maker, Programmable 12-Cup Coffee Pot & Single Serve Coffee Machine",
+   "price": 119.99
+  },
+  "credits": 5,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "sb",
+  "id": "protected-walmart-5",
+  "got": {
+   "name": "Ninja Hot & Iced 10-Cup Drip Coffee Maker, 4 Brew Styles, Rapid Cold Brew, CM360WM, Black",
+   "price": 98.0
+  },
+  "credits": 15,
+  "price_ok": true,
+  "name_ok": true
+ },
+ {
+  "api": "fc",
+  "id": "protected-walmart-5",
+  "got": {
+   "name": "Ninja Hot & Iced 10-Cup Drip Coffee Maker, 4 Brew Styles, Rapid Cold Brew, CM360WM, Black",
+   "price": 98
+  },
+  "credits": 5,
+  "price_ok": true,
+  "name_ok": true
+ }
+]

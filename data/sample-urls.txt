@@ -1,0 +1,8 @@
+https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html 50000 A Light in the Attic
+https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html 50000 Tipping the Velvet
+https://www.zillow.com/homedetails/221-Park-Ln-Austin-TX-78704/29458732_zpid/ 20000 Park Ln
+https://www.zillow.com/homedetails/1410-E-3rd-St-A-Austin-TX-78702/331627622_zpid/ 20000 3rd St
+https://www.homedepot.com/p/DEWALT-20V-MAX-Cordless-Drill-Impact-2-Tool-Combo-Kit-with-2-20V-1-3Ah-Batteries-Charger-and-Bag-DCK240C2/204373168 5000 DCK240C2
+https://www.homedepot.com/p/BLACK-DECKER-20V-Lithium-Ion-Cordless-3-8-in-Drill-Driver-with-1-5Ah-Battery-and-Charger-BCD702C1/314718057 5000 BCD702C1
+https://www.walmart.com/ip/AIRMSEN-2-Way-14-Cup-Programmable-Drip-Coffee-Maker-for-K-Cup-Combo-and-Ground-Single-Serve-Machine-Glass-Carafe-Auto-Pause-and-Pour-Black/16903456907 20000 AIRMSEN
+https://www.walmart.com/ip/Beautiful-Perfect-Grind-Programmable-Single-Serve-Coffee-Maker-White-Icing-by-Drew-Barrymore/3479324898 20000 Perfect Grind
