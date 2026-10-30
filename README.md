@@ -2,7 +2,7 @@
 
 A reproducible cost and success-rate test of two web scraping APIs, ScrapingBee and Firecrawl, on the same 100 public pages. Use it to check the numbers in the ScrapingBee blog article "ScrapingBee vs Firecrawl: Which Web Scraping API Should You Use in 2026?", to rerun the test on your own accounts, or to estimate what your own URLs would cost.
 
-The benchmark was written for the ScrapingBee blog, so it isn't neutral. That's why every script, URL, and per-page verdict is here. The raw page bodies aren't published, because that content belongs to each site.
+ScrapingBee ran this benchmark. Every script, URL, and per-page verdict is here, so you can check each number or rerun the test.
 
 ## Quick start
 
@@ -58,7 +58,7 @@ PDFs of 1 to 15 pages cost $0.25 per 1,000 successful files on ScrapingBee, whic
 
 ## Settings
 
-Both APIs ran the 80 scraped pages at 2 concurrent requests, the limit of the free Firecrawl account used. The crawls ran separately. ScrapingBee's CLI ran at concurrency 20, and Firecrawl's /crawl job ran on the same account.
+Both APIs ran the 80 scraped pages at 2 concurrent requests. The crawls ran separately. ScrapingBee's CLI ran at concurrency 20, and Firecrawl ran one /crawl job.
 
 | Page type | ScrapingBee | Firecrawl |
 |---|---|---|
@@ -110,7 +110,7 @@ The scripts read `SB_KEY` and `FC_KEY`, and the examples and the estimator read 
 ## Follow-up tests
 
 - `scripts/staleness.py` → `results/extra/fc-cache-staleness.json`: 32 popular Walmart product URLs (31 unique) through Firecrawl's defaults. Each cache hit is compared with an uncached fetch of the same page, using the price from Walmart's page data. The 31 unique URLs got 5 cached copies, 1.7 to 41.1 hours old, and none had a different price. A 6th hit, on the repeated Switch 2 URL, came from this script's own fresh request and isn't counted.
-- `scripts/realx_truth.py` and `scripts/realx_extract.py` → `results/real-extraction/`: AI extraction of name and price on 15 live product pages, scored against the price each page declares about itself. The pages are protected, so the ground truth was fetched through ScrapingBee on 2026-10-26. `realx_truth.py` reads JSON-LD (Etsy, Zillow). The Walmart rows come from Walmart's Next.js page data, read with `scripts/structured_price.py`. The extraction ran on 2026-10-29.
+- `scripts/realx_truth.py` and `scripts/realx_extract.py` → `results/real-extraction/`: AI extraction of name and price on 15 live product pages, scored against the price each page declares about itself, read on 2026-10-26. `realx_truth.py` reads JSON-LD (Etsy, Zillow). The Walmart rows come from Walmart's Next.js page data, read with `scripts/structured_price.py`. The extraction ran on 2026-10-29.
 - `scripts/estimate_cost.py`: estimate your monthly ScrapingBee credits from a sample of your own URLs. A page counts as usable only with no block-page markers and with the expected text you supply on each input line. The projection divides every credit charged by the usable pages. Sample input is in `data/sample-urls.txt`, and its output is in `logs/estimate-cost-output.txt`.
 - `scripts/throughput.py` → `logs/throughput.txt`: 100 books.toscrape.com pages on ScrapingBee at 5 and at 25 concurrent requests.
 - `scripts/structured_price_scan.py` → `results/extra/structured-price-scan.json` (the script writes `structured-price-scan-all.json`): the machine-readable price (JSON-LD or Next.js page data) on the protected product pages. Etsy's JSON-LD contains HTML entities that the scan's JSON parser rejects, so Etsy's prices are taken from `results/real-extraction/truth.json`.

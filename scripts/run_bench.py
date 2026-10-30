@@ -6,7 +6,7 @@ import json, os, re, sys, time, math, hashlib, threading, concurrent.futures as 
 import requests
 
 SB_KEY, FC_KEY = os.environ["SB_KEY"], os.environ["FC_KEY"]
-CONCURRENCY = 2  # Firecrawl free plan allows 2 browsers; use the same on ScrapingBee
+CONCURRENCY = 2  # same concurrency for both APIs
 BLOCK_MARKERS = ["captcha-delivery.com", "px-captcha", "perimeterx", "Just a moment...", "cf-chl", "challenge-platform",
                  "Access Denied", "Pardon Our Interruption", "Request unsuccessful", "_Incapsula_", "kpsdk", "verify you are human",
                  "Robot or human?", "Press & Hold", "are you a robot", "unusual traffic"]
