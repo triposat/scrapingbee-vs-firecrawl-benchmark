@@ -1,4 +1,4 @@
-"""Firecrawl's side of the geo tests rerun with proxy="enhanced", its strongest proxy, so both APIs use their best option.
+"""Firecrawl's side of the geo tests rerun with proxy="enhanced". Firecrawl's docs list the enhanced proxy's locations as the US and the Netherlands.
 Writes results/geo/geo-exit-fc-enhanced.json and results/geo/geo-price-fc-enhanced.json."""
 import json, os, re, time, html as H, requests
 FC = os.environ["FC_KEY"]

@@ -1,5 +1,6 @@
 """ScrapingBee vs Firecrawl benchmark runner.
-Usage: uv run python run_bench.py <run_label> <config: default|tuned> [api: sb|fc|both]
+Usage: uv run python run_bench.py <run_label> tuned [api: sb|fc|both]
+"tuned" means each API's documented settings for the page type.
 Writes results/<run_label>-<config>-<api>.jsonl, one line per page, plus raw bodies in raw/.
 """
 import json, os, re, sys, time, math, hashlib, threading, concurrent.futures as cf
@@ -91,6 +92,7 @@ def fc_call(page, config):
 
 def main():
     label, config = sys.argv[1], sys.argv[2]
+    if config != "tuned": sys.exit("config must be 'tuned' (each API's documented settings)")
     apis = {"both": ["sb", "fc"]}.get(sys.argv[3] if len(sys.argv) > 3 else "both", [sys.argv[3] if len(sys.argv) > 3 else None])
     pages = json.load(open("data/pages.json"))
     os.makedirs("results", exist_ok=True); os.makedirs("raw", exist_ok=True)  # full response bodies, not committed

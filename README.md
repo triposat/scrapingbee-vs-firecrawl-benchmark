@@ -40,9 +40,9 @@ Each of the 80 static, JavaScript, protected, and PDF pages ran 3 times. Costs a
 | Protected | $7.27 | $3.80 | 89 of 90 | 90 of 90 |
 | PDF | $0.25 | $14.44 | 29 of 30 | 30 of 30 |
 
-On protected pages, Auto Mode used the 1-credit tier on Zillow and Foot Locker and the 10-credit tier on Walmart, so those 3 sites cost less on ScrapingBee. On Etsy, Home Depot, and StockX, Auto Mode moved to the 25- or 75-credit tier as each site required. The `auto_cost` field in each results file shows the tier for every request.
+On protected pages, Auto Mode used the 1-credit tier on Zillow and Foot Locker and the 10-credit tier on Walmart, so those 3 sites cost less on ScrapingBee. On Etsy, Home Depot, and StockX, Auto Mode used the 25- or 75-credit tier. The `auto_cost` field in each results file shows the tier for every request. On Zillow, the 1-credit tier returned the full page, and the same pages fetched at 1 credit carry their JSON-LD price in `results/real-extraction/truth.json`. The one protected miss was a Home Depot page that returned 404 in run 2 and loaded in runs 1 and 3.
 
-PDFs of 1 to 15 pages cost $0.25 per 1,000 successful files on ScrapingBee, which returns the original file, and $14.44 on Firecrawl, which converts each PDF to Markdown and bills per PDF page. The 20-page crawl succeeded on every page with both APIs. Weighting each page type by its number of pages, the cost per 1,000 successful pages across all 100 pages was $2.56 on ScrapingBee and $4.86 on Firecrawl. Without the PDFs, it was $2.82 on ScrapingBee and $3.80 on Firecrawl.
+PDFs of 1 to 15 pages cost $0.25 per 1,000 successful files on ScrapingBee, which returns the original file, and $14.44 on Firecrawl, which converts each PDF to Markdown and bills per PDF page. The 20-page crawl returned all 20 URLs with both APIs. Weighting each page type by its number of pages, the cost per 1,000 successful pages across all 100 pages was $2.56 on ScrapingBee and $4.86 on Firecrawl. Without the PDFs, it was $2.82 on ScrapingBee and $3.80 on Firecrawl.
 
 ## What was tested
 
@@ -77,11 +77,11 @@ A page counts only when its expected text is in the response and the response is
 
 ## Billing data
 
-Credits come from ScrapingBee's `Spb-cost` response header and Firecrawl's `metadata.creditsUsed` field. Firecrawl's reported credits matched the drop in its account balance over the runs. Firecrawl rows that show `proxy_used: "stealth"` cost 1 credit, because Firecrawl bills its enhanced proxy at the same 1 credit as a basic request. The 80 scraped pages ran 3 times on 2026-10-26, and the 20-page crawl ran once. Costs are priced at each $19 plan's credit price ($0.000253 for ScrapingBee Hobby, $0.0038 for Firecrawl Hobby).
+Credits come from ScrapingBee's `Spb-cost` response header and Firecrawl's `metadata.creditsUsed` field. Firecrawl rows that show `proxy_used: "stealth"` cost 1 credit, because Firecrawl bills its enhanced proxy at the same 1 credit as a basic request. The 80 scraped pages ran 3 times on 2026-10-26, and the 20-page crawl ran once. Costs are priced at each $19 plan's credit price ($0.000253 for ScrapingBee Hobby, $0.0038 for Firecrawl Hobby).
 
 ## Files
 
-- `results/run{1,2,3}-tuned-{sb,fc}.jsonl`: one line per page with success, reason, credits, Auto Mode tier (`auto_cost`), and Firecrawl cache state.
+- `results/run{1,2,3}-tuned-{sb,fc}.jsonl`: one line per page with success, reason, credits, Auto Mode tier (`auto_cost`), and Firecrawl cache state. "Tuned" means each API's documented settings for the page type, listed under Settings.
 - `results/aggregate.json`: totals by page type. `scripts/charts.py` draws the article's cost chart (the PNG in `results/`) from it.
 - `results/extract_*.json`: structured extraction on 20 books.toscrape.com pages, scored against `extract_key.json`.
 - `results/md_scores.json`: Markdown quality on 10 pages (sampled-sentence recall, headings, table rows, credits).
@@ -110,14 +110,13 @@ The scripts read `SB_KEY` and `FC_KEY`, and the examples and the estimator read 
 ## Follow-up tests
 
 - `scripts/staleness.py` → `results/extra/fc-cache-staleness.json`: 32 popular Walmart product URLs (31 unique) through Firecrawl's defaults. Each cache hit is compared with an uncached fetch of the same page, using the price from Walmart's page data. The 31 unique URLs got 5 cached copies, 1.7 to 41.1 hours old, and none had a different price. A 6th hit, on the repeated Switch 2 URL, came from this script's own fresh request and isn't counted.
-- `scripts/realx_truth.py` and `scripts/realx_extract.py` → `results/real-extraction/`: AI extraction of name and price on 15 live product pages, scored against the price each page declares about itself, read on 2026-10-26. `realx_truth.py` reads JSON-LD (Etsy, Zillow). The Walmart rows come from Walmart's Next.js page data, read with `scripts/structured_price.py`. The extraction ran on 2026-10-29.
+- `scripts/realx_truth.py` and `scripts/realx_extract.py` → `results/real-extraction/`: AI extraction of name and price on 15 live product pages, scored against the price each page declares about itself, read on 2026-10-26. `realx_truth.py` reads that price from JSON-LD (Etsy, Zillow) or from Walmart's Next.js page data. The extraction ran on 2026-10-29.
 - `scripts/estimate_cost.py`: estimate your monthly ScrapingBee credits from a sample of your own URLs. A page counts as usable only with no block-page markers and with the expected text you supply on each input line. The projection divides every credit charged by the usable pages. Sample input is in `data/sample-urls.txt`, and its output is in `logs/estimate-cost-output.txt`.
 - `scripts/throughput.py` → `logs/throughput.txt`: 100 books.toscrape.com pages on ScrapingBee at 5 and at 25 concurrent requests.
-- `scripts/structured_price_scan.py` → `results/extra/structured-price-scan.json` (the script writes `structured-price-scan-all.json`): the machine-readable price (JSON-LD or Next.js page data) on the protected product pages. Etsy's JSON-LD contains HTML entities that the scan's JSON parser rejects, so Etsy's prices are taken from `results/real-extraction/truth.json`.
 - `scripts/mcp_tool_tokens.py` → `results/mcp/` (the script writes `{name}-tools.json`): tokens in each MCP server's tool definitions (`o200k_base`).
-- `scripts/structured_price.py`: reads the prices a page declares about itself (JSON-LD offers, and Walmart's own product price in its Next.js page data). Run it on the full page HTML. It matched all 15 ground-truth prices in `results/real-extraction/truth.json`. For Walmart's own product price, use `results/extra/structured-price-scan-walmart.json`. The Walmart rows in `structured-price-scan.json` carry a note that points there.
+- `scripts/structured_price.py`: reads the prices a page declares about itself (JSON-LD offers, and Walmart's own product price in its Next.js page data). Run it on the full page HTML.
 - `logs/uuid-cache-test.txt`: httpbin.org/uuid through both APIs. ScrapingBee returned a new ID each time. Firecrawl's defaults returned the same cached ID twice, from a copy cached 10 minutes before the test.
-- `scripts/geo_exit.py` → `results/geo/geo-exit-round{1,2}.json` (the script writes `geo-exit.json`, saved once per round): the exit country for 8 requested countries on ScrapingBee premium proxies and Firecrawl's default, checked with ip-api.com. `scripts/geo_fc_enhanced.py` → `results/geo/geo-exit-fc-enhanced.json` and `geo-price-fc-enhanced.json`: Firecrawl's side rerun with `proxy: "enhanced"`, its strongest proxy. `results/geo/screenshots/`: full-page 2× screenshots of the Steam page requested from Indonesia through each API (2026-10-29), the source of the article's geo image.
+- `scripts/geo_exit.py` → `results/geo/geo-exit-round{1,2}.json` (the script writes `geo-exit.json`, saved once per round): the exit country for 8 requested countries on ScrapingBee premium proxies and Firecrawl's default, checked with ip-api.com. `scripts/geo_fc_enhanced.py` → `results/geo/geo-exit-fc-enhanced.json` and `geo-price-fc-enhanced.json`: Firecrawl's side rerun with `proxy: "enhanced"`. Firecrawl's docs list the enhanced proxy's locations as the US and the Netherlands. `results/geo/screenshots/`: full-page 2× screenshots of the Steam page requested from Indonesia through each API (2026-10-29), the source of the article's geo image.
 - `scripts/geo_price.py` → `results/geo/geo-price-stardew.json` (the script writes `geo-price.json`): Steam's regional price for Stardew Valley, requested for Indonesia and Germany on both APIs.
 
 ## Logs
