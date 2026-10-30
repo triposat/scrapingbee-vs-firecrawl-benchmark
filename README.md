@@ -123,7 +123,6 @@ Raw request and response output behind single-request claims in the article, eac
 
 - `logs/blocked-request-not-charged.txt`: a Home Depot page requested without a premium proxy. The target's 403 came back as a 500 with `spb-cost: 0`.
 - `logs/json-endpoint-vs-rendered.txt`: the same 10 quotes from quotes.toscrape.com's JSON endpoint (1 credit) and from the rendered page (5 credits).
-- `logs/selector-ai-fallback.txt`: a selector pass with one broken selector (1 credit), then AI extraction for only the empty field (6 credits).
 - `logs/fast-search-sample.txt`: one Fast Search request, its result counts, and its cost (10 credits).
 - `logs/antibot-probe.txt`: a direct request to each protected site's homepage, showing its anti-bot system.
 - `logs/example-{1,2}-output.txt`, `logs/example-3-cli-crawl.txt`: the output of the article's three code examples (`examples/`).
