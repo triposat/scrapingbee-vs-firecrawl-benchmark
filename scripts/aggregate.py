@@ -1,6 +1,7 @@
 """Aggregate the tuned runs (all available) into the article table and chart data.
-PDF rule: Firecrawl counts when the marker text is in its Markdown. ScrapingBee returns the file,
-so it counts when the bytes match a direct download AND pypdf finds the marker in that file."""
+PDF rule: Firecrawl counts when it returns parsed text of more than 1,000 bytes with HTTP 200, even if
+the marker text is missing (run_bench.py's stricter "ok" flag is relaxed here). ScrapingBee returns the
+file, so it counts when the bytes match a fresh direct download AND pypdf finds the marker in that file."""
 import json, glob, re, requests, pypdf, io
 PRICE = {"sb": 19 / 75000, "fc": 19 / 5000}
 pages = {p["id"]: p for p in json.load(open("data/pages.json"))}
