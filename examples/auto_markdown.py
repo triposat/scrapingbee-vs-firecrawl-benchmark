@@ -18,7 +18,7 @@ response = requests.get(
     timeout=150,
 )
 response.raise_for_status()
-first_quote = next(line for line in response.text.splitlines() if "by " in line)
-print(first_quote)
+quotes = [line for line in response.text.splitlines() if line.startswith("“")]
+print("Quotes returned:", len(quotes))
 print("Tier that worked (credits):", response.headers["Spb-auto-cost"])
 print("Total credits charged:", response.headers["Spb-cost"])
