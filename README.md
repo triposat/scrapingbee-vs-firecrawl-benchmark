@@ -1,6 +1,6 @@
 # ScrapingBee vs Firecrawl benchmark
 
-A reproducible cost and success-rate test of two web scraping APIs, ScrapingBee and Firecrawl, on the same 100 public pages. Use it to check the numbers in the article [ScrapingBee vs Firecrawl: Which Web Scraping API Should You Use in 2026?](https://www.scrapingbee.com/blog/scrapingbee-vs-firecrawl/), to rerun the test on your own accounts, or to estimate what your own URLs would cost.
+A reproducible cost and success-rate test of two web scraping APIs, ScrapingBee and Firecrawl, on the same 100 public pages. Use it to check the numbers in the ScrapingBee blog article "ScrapingBee vs Firecrawl: Which Web Scraping API Should You Use in 2026?", to rerun the test on your own accounts, or to estimate what your own URLs would cost.
 
 The benchmark was written for the ScrapingBee blog, so it isn't neutral. That's why every script, URL, and per-page verdict is here. The raw page bodies aren't published, because that content belongs to each site.
 
