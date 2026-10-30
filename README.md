@@ -42,7 +42,9 @@ Each of the 80 static, JavaScript, protected, and PDF pages ran 3 times. Costs a
 
 On protected pages, Auto Mode used the 1-credit tier on Zillow and Foot Locker and the 10-credit tier on Walmart, so those 3 sites cost less on ScrapingBee. On Etsy, Home Depot, and StockX, Auto Mode used the 25- or 75-credit tier. The `auto_cost` field in each results file shows the tier for every request. On Zillow, the 1-credit tier returned the full page, and the same pages fetched at 1 credit carry their JSON-LD price in `results/real-extraction/truth.json`. The one protected miss was a Home Depot page that returned 404 in run 2 and loaded in runs 1 and 3.
 
-PDFs of 1 to 15 pages cost $0.25 per 1,000 successful files on ScrapingBee, which returns the original file, and $14.44 on Firecrawl, which converts each PDF to Markdown and bills per PDF page. The 20-page crawl returned all 20 URLs with both APIs. Weighting each page type by its number of pages, the cost per 1,000 successful pages across all 100 pages was $2.56 on ScrapingBee and $4.86 on Firecrawl. Without the PDFs, it was $2.82 on ScrapingBee and $3.80 on Firecrawl.
+PDFs of 1 to 15 pages cost $0.25 per 1,000 successful files on ScrapingBee, which returns the original file, and $14.44 on Firecrawl, which converts each PDF to Markdown and bills per PDF page. The one ScrapingBee PDF miss was a request the source site blocked with a 403, returned as a 500 and not charged.
+
+The 20-page crawl returned all 20 URLs with both APIs, at $0.25 per 1,000 URLs on ScrapingBee and $3.80 on Firecrawl. Weighting each page type by its number of pages, the cost per 1,000 successful pages across all 100 pages was $2.56 on ScrapingBee and $4.86 on Firecrawl. Without the PDFs, it was $2.82 on ScrapingBee and $3.80 on Firecrawl.
 
 ## What was tested
 
@@ -86,7 +88,7 @@ Credits come from ScrapingBee's `Spb-cost` response header and Firecrawl's `meta
 - `results/extract_*.json`: structured extraction on 20 books.toscrape.com pages, scored against `extract_key.json`.
 - `results/md_scores.json`: Markdown quality on 10 pages (sampled-sentence recall, headings, table rows, credits).
 - `results/crawl_scrapingbee_manifest.json` (the manifest from the article's Example 3 CLI crawl) and `results/crawl_firecrawl_summary.json` (a summary of what `scripts/fc_crawl.py` writes to `results/crawl_fc.json`): the 20-page crawls. Each API fetched 20 URLs from the sitemap, and 16 are the same. ScrapingBee's set includes one image (`img/speakeasy.png`), and Firecrawl's includes a duplicate path (`//async/`). Each API was billed 1 credit per URL.
-- `data/candidates_allowed.json`: candidate protected URLs from `scripts/find_urls.py` that each site's robots.txt in `robots/` allows. `scripts/build_pages.py` turns them into `data/pages.json`.
+- `data/candidates_allowed.json`: the candidate protected URLs that `scripts/find_urls.py` found, kept only where each site's robots.txt in `robots/` allows them for `*`. `scripts/build_pages.py` turns them into `data/pages.json`.
 
 ## Rerun every part
 
@@ -109,7 +111,7 @@ The scripts read `SB_KEY` and `FC_KEY`, and the examples and the estimator read 
 
 ## Follow-up tests
 
-- `scripts/staleness.py` → `results/extra/fc-cache-staleness.json`: 32 popular Walmart product URLs (31 unique) through Firecrawl's defaults. Each cache hit is compared with an uncached fetch of the same page, using the price from Walmart's page data. The 31 unique URLs got 5 cached copies, 1.7 to 41.1 hours old, and none had a different price. A 6th hit, on the repeated Switch 2 URL, came from this script's own fresh request and isn't counted.
+- `scripts/staleness.py` → `results/extra/fc-cache-staleness.json`: the 32 popular Walmart product URLs (31 unique) in `results/extra/popular-walmart-urls.json` through Firecrawl's defaults. Each cache hit is compared with an uncached fetch of the same page, using the price from Walmart's page data. The 31 unique URLs got 5 cached copies, 1.7 to 41.1 hours old, and none had a different price. A 6th hit, on the repeated Switch 2 URL, came from this script's own fresh request and isn't counted.
 - `scripts/realx_truth.py` and `scripts/realx_extract.py` → `results/real-extraction/`: AI extraction of name and price on 15 live product pages, scored against the price each page declares about itself, read on 2026-10-26. `realx_truth.py` reads that price from JSON-LD (Etsy, Zillow) or from Walmart's Next.js page data. The extraction ran on 2026-10-29.
 - `scripts/estimate_cost.py`: estimate your monthly ScrapingBee credits from a sample of your own URLs. A page counts as usable only with no block-page markers and with the expected text you supply on each input line. The projection divides every credit charged by the usable pages. Sample input is in `data/sample-urls.txt`, and its output is in `logs/estimate-cost-output.txt`.
 - `scripts/throughput.py` → `logs/throughput.txt`: 100 books.toscrape.com pages on ScrapingBee at 5 and at 25 concurrent requests.

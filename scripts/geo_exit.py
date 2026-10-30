@@ -2,8 +2,8 @@
 import json, os, re, time, concurrent.futures as cf, requests
 SB, FC = os.environ["SB_KEY"], os.environ["FC_KEY"]
 ECHO = "http://ip-api.com/json/?fields=countryCode,country,isp,query"
-COUNTRIES = {"de": "in Firecrawl's list", "jp": "in Firecrawl's list", "br": "in Firecrawl's list", "in": "in Firecrawl's list",
-             "kr": "not in Firecrawl's list", "za": "not in Firecrawl's list", "id": "not in Firecrawl's list", "ar": "not in Firecrawl's list"}
+COUNTRIES = {"de": "in Firecrawl's docs list", "jp": "in Firecrawl's docs list", "br": "in Firecrawl's docs list", "in": "in Firecrawl's docs list",
+             "kr": "not in Firecrawl's docs list", "za": "not in Firecrawl's docs list", "id": "not in Firecrawl's docs list", "ar": "not in Firecrawl's docs list"}
 def parse(text):
     m = re.search(r'\{[^{}]*"countryCode"[^{}]*\}', text or "")
     return json.loads(m.group(0)) if m else {"raw": (text or "")[:120]}

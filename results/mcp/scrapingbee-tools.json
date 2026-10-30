@@ -1,7 +1,7 @@
 [
  {
   "name": "get_amazon_search_results",
-  "description": "Scrape Amazon search results using ScrapingBee.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "description": "Scrape Amazon search results using ScrapingBee.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u2014\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -93,7 +93,7 @@
  },
  {
   "name": "get_amazon_product_details",
-  "description": "Scrape Amazon product details using ScrapingBee.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "description": "Scrape Amazon product details using ScrapingBee.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u2014\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -160,7 +160,7 @@
  },
  {
   "name": "get_amazon_pricing",
-  "description": "Retrieve current Amazon product pricing and seller offers for a given ASIN.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "description": "Retrieve current Amazon product pricing and seller offers for a given ASIN.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u2014\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -217,7 +217,7 @@
  },
  {
   "name": "ask_chatgpt",
-  "description": "This tool allows you to send a prompt to OpenAI's ChatGPT via ScrapingBee\nand get back the generated response.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "description": "This tool allows you to send a prompt to OpenAI's ChatGPT via ScrapingBee\nand get back the generated response.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u2014\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -254,7 +254,7 @@
  },
  {
   "name": "fast_search",
-  "description": "Search the web using ScrapingBee's Fast Search API and return structured\nresults. This is the PRIMARY tool for web searches \u00e2\u0080\u0094 it returns clean\norganic results and top stories in under one second at a lower credit cost.\n\nUSE THIS TOOL FIRST for any general web search. Only fall back to\nget_google_search_results if you need specialized search types such as\nnews, maps, Google Lens, shopping, image search, or Google AI mode.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "description": "Search the web using ScrapingBee's Fast Search API and return structured\nresults. This is the PRIMARY tool for web searches \u2014 it returns clean\norganic results and top stories in under one second at a lower credit cost.\n\nUSE THIS TOOL FIRST for any general web search. Only fall back to\nget_google_search_results if you need specialized search types such as\nnews, maps, Google Lens, shopping, image search, or Google AI mode.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u2014\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -291,7 +291,7 @@
  },
  {
   "name": "ask_gemini",
-  "description": "Ask Gemini through ScrapingBee and receive citation objects when available.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "description": "Ask Gemini through ScrapingBee and receive citation objects when available.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u2014\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -323,7 +323,7 @@
  },
  {
   "name": "get_google_search_results",
-  "description": "This is a FALLBACK tool \u00e2\u0080\u0094\nuse fast_search first for general web searches. Only use this tool when\nyou need specialized search types that fast_search does not support:\nnews, maps, Google Lens, shopping, image search, or Google AI mode.\n\nScrape Google search results using ScrapingBee and return the results.\nThis tool can scrape normal results, news results, maps results, search\nusing google lens, shopping related results, image results, and get the result from\nGoogle's AI mode.\nIt can even return the HTML along with the search results.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "description": "This is a FALLBACK tool \u2014\nuse fast_search first for general web searches. Only use this tool when\nyou need specialized search types that fast_search does not support:\nnews, maps, Google Lens, shopping, image search, or Google AI mode.\n\nScrape Google search results using ScrapingBee and return the results.\nThis tool can scrape normal results, news results, maps results, search\nusing google lens, shopping related results, image results, and get the result from\nGoogle's AI mode.\nIt can even return the HTML along with the search results.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u2014\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -465,7 +465,7 @@
  },
  {
   "name": "get_page_text",
-  "description": "Scrape a URL using ScrapingBee and return the page content in\nMarkdown or Text format.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u00e2\u0080\u0094\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
+  "description": "Scrape a URL using ScrapingBee and return the page content in\nMarkdown or Text format.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u2014\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -486,7 +486,7 @@
     "auto_mode": {
      "default": true,
      "type": "boolean",
-     "description": "On by default \u00e2\u0080\u0094 ScrapingBee automatically picks the cheapest\nconfiguration that successfully fetches the page, escalating proxy\nstrength only as needed (you are charged only for the winning\nconfig). To choose a configuration yourself instead, use one of:\nauto_mode=False for the classic tier (no proxy, cheapest),\npremium_proxy=True, or stealth_proxy=True \u00e2\u0080\u0094 the two proxy flags\noverride auto_mode on their own, so auto_mode=False is only needed\nfor the classic tier. Setting render_js also switches to manual."
+     "description": "On by default \u2014 ScrapingBee automatically picks the cheapest\nconfiguration that successfully fetches the page, escalating proxy\nstrength only as needed (you are charged only for the winning\nconfig). To choose a configuration yourself instead, use one of:\nauto_mode=False for the classic tier (no proxy, cheapest),\npremium_proxy=True, or stealth_proxy=True \u2014 the two proxy flags\noverride auto_mode on their own, so auto_mode=False is only needed\nfor the classic tier. Setting render_js also switches to manual."
     },
     "max_cost": {
      "default": 0,
@@ -528,7 +528,7 @@
     "wait": {
      "default": 0,
      "type": "integer",
-     "description": "Milliseconds to wait after page load (0\u00e2\u0080\u009335000)."
+     "description": "Milliseconds to wait after page load (0\u201335000)."
     },
     "wait_for": {
      "default": "",
@@ -565,7 +565,7 @@
       }
      ],
      "default": null,
-     "description": "Integer 0\u00e2\u0080\u009310000000 to reuse an IP for up to 5 minutes."
+     "description": "Integer 0\u201310000000 to reuse an IP for up to 5 minutes."
     },
     "cookies": {
      "default": "",
@@ -575,7 +575,7 @@
     "timeout": {
      "default": 140000,
      "type": "integer",
-     "description": "Request timeout in milliseconds (1000\u00e2\u0080\u0093140000, default 140000)."
+     "description": "Request timeout in milliseconds (1000\u2013140000, default 140000)."
     },
     "device": {
      "default": "desktop",
@@ -606,7 +606,7 @@
  },
  {
   "name": "get_page_html",
-  "description": "Scrape a URL using ScrapingBee and return the page content in HTML.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u00e2\u0080\u0094\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
+  "description": "Scrape a URL using ScrapingBee and return the page content in HTML.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u2014\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -617,7 +617,7 @@
     "auto_mode": {
      "default": true,
      "type": "boolean",
-     "description": "On by default \u00e2\u0080\u0094 ScrapingBee automatically picks the cheapest\nconfiguration that successfully fetches the page, escalating proxy\nstrength only as needed (you are charged only for the winning\nconfig). To choose a configuration yourself instead, use one of:\nauto_mode=False for the classic tier (no proxy, cheapest),\npremium_proxy=True, or stealth_proxy=True \u00e2\u0080\u0094 the two proxy flags\noverride auto_mode on their own, so auto_mode=False is only needed\nfor the classic tier. Setting render_js also switches to manual."
+     "description": "On by default \u2014 ScrapingBee automatically picks the cheapest\nconfiguration that successfully fetches the page, escalating proxy\nstrength only as needed (you are charged only for the winning\nconfig). To choose a configuration yourself instead, use one of:\nauto_mode=False for the classic tier (no proxy, cheapest),\npremium_proxy=True, or stealth_proxy=True \u2014 the two proxy flags\noverride auto_mode on their own, so auto_mode=False is only needed\nfor the classic tier. Setting render_js also switches to manual."
     },
     "max_cost": {
      "default": 0,
@@ -659,7 +659,7 @@
     "wait": {
      "default": 0,
      "type": "integer",
-     "description": "Milliseconds to wait after page load (0\u00e2\u0080\u009335000)."
+     "description": "Milliseconds to wait after page load (0\u201335000)."
     },
     "wait_for": {
      "default": "",
@@ -696,7 +696,7 @@
       }
      ],
      "default": null,
-     "description": "Integer 0\u00e2\u0080\u009310000000 to reuse an IP for up to 5 minutes."
+     "description": "Integer 0\u201310000000 to reuse an IP for up to 5 minutes."
     },
     "cookies": {
      "default": "",
@@ -706,7 +706,7 @@
     "timeout": {
      "default": 140000,
      "type": "integer",
-     "description": "Request timeout in milliseconds (1000\u00e2\u0080\u0093140000, default 140000)."
+     "description": "Request timeout in milliseconds (1000\u2013140000, default 140000)."
     },
     "device": {
      "default": "desktop",
@@ -737,7 +737,7 @@
  },
  {
   "name": "extract_page_data",
-  "description": "Scrape a URL using ScrapingBee and extract specific data using\nCSS or XPath selectors.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u00e2\u0080\u0094\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
+  "description": "Scrape a URL using ScrapingBee and extract specific data using\nCSS or XPath selectors.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u2014\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -752,7 +752,7 @@
     "auto_mode": {
      "default": true,
      "type": "boolean",
-     "description": "On by default \u00e2\u0080\u0094 ScrapingBee automatically picks the cheapest\nconfiguration that successfully fetches the page, escalating proxy\nstrength only as needed (you are charged only for the winning\nconfig). To choose a configuration yourself instead, use one of:\nauto_mode=False for the classic tier (no proxy, cheapest),\npremium_proxy=True, or stealth_proxy=True \u00e2\u0080\u0094 the two proxy flags\noverride auto_mode on their own, so auto_mode=False is only needed\nfor the classic tier. Setting render_js also switches to manual."
+     "description": "On by default \u2014 ScrapingBee automatically picks the cheapest\nconfiguration that successfully fetches the page, escalating proxy\nstrength only as needed (you are charged only for the winning\nconfig). To choose a configuration yourself instead, use one of:\nauto_mode=False for the classic tier (no proxy, cheapest),\npremium_proxy=True, or stealth_proxy=True \u2014 the two proxy flags\noverride auto_mode on their own, so auto_mode=False is only needed\nfor the classic tier. Setting render_js also switches to manual."
     },
     "max_cost": {
      "default": 0,
@@ -794,7 +794,7 @@
     "wait": {
      "default": 0,
      "type": "integer",
-     "description": "Milliseconds to wait after page load (0\u00e2\u0080\u009335000)."
+     "description": "Milliseconds to wait after page load (0\u201335000)."
     },
     "wait_for": {
      "default": "",
@@ -831,7 +831,7 @@
       }
      ],
      "default": null,
-     "description": "Integer 0\u00e2\u0080\u009310000000 to reuse an IP for up to 5 minutes."
+     "description": "Integer 0\u201310000000 to reuse an IP for up to 5 minutes."
     },
     "cookies": {
      "default": "",
@@ -841,7 +841,7 @@
     "timeout": {
      "default": 140000,
      "type": "integer",
-     "description": "Request timeout in milliseconds (1000\u00e2\u0080\u0093140000, default 140000)."
+     "description": "Request timeout in milliseconds (1000\u2013140000, default 140000)."
     },
     "device": {
      "default": "desktop",
@@ -878,7 +878,7 @@
  },
  {
   "name": "get_screenshot",
-  "description": "Scrape a URL using ScrapingBee and return it's screenshot.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u00e2\u0080\u0094\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
+  "description": "Scrape a URL using ScrapingBee and return it's screenshot.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u2014\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -931,7 +931,7 @@
     "wait": {
      "default": 0,
      "type": "integer",
-     "description": "Milliseconds to wait after page load (0\u00e2\u0080\u009335000)."
+     "description": "Milliseconds to wait after page load (0\u201335000)."
     },
     "wait_for": {
      "default": "",
@@ -968,7 +968,7 @@
       }
      ],
      "default": null,
-     "description": "Integer 0\u00e2\u0080\u009310000000 to reuse an IP for up to 5 minutes."
+     "description": "Integer 0\u201310000000 to reuse an IP for up to 5 minutes."
     },
     "cookies": {
      "default": "",
@@ -978,7 +978,7 @@
     "timeout": {
      "default": 140000,
      "type": "integer",
-     "description": "Request timeout in milliseconds (1000\u00e2\u0080\u0093140000, default 140000)."
+     "description": "Request timeout in milliseconds (1000\u2013140000, default 140000)."
     },
     "device": {
      "default": "desktop",
@@ -1004,7 +1004,7 @@
  },
  {
   "name": "get_file",
-  "description": "Fetches a file from a URL and returns it in a format suitable for FastMcP.\n\nThis tool can be used to fetch any file type, including images, PDFs, etc.\nThe framework will handle the encoding and packaging of the file.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u00e2\u0080\u0094\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
+  "description": "Fetches a file from a URL and returns it in a format suitable for FastMcP.\n\nThis tool can be used to fetch any file type, including images, PDFs, etc.\nThe framework will handle the encoding and packaging of the file.\n\nScope: one URL per call, with the result returned into the conversation.\nFor many URLs, a whole site, output written to a file or directory,\nresumable jobs, or a scheduled re-run, use the ScrapingBee CLI instead \u2014\n`scrapingbee scrape --input-file urls.txt --output-dir results`,\n`scrapingbee crawl URL --save-pattern ...`, `scrapingbee schedule --every`.\nThis server has no batch, crawl, file-output or scheduling equivalent.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -1042,7 +1042,7 @@
       }
      ],
      "default": null,
-     "description": "Integer 0\u00e2\u0080\u009310000000 to reuse an IP for up to 5 minutes."
+     "description": "Integer 0\u201310000000 to reuse an IP for up to 5 minutes."
     },
     "cookies": {
      "default": "",
@@ -1052,7 +1052,7 @@
     "timeout": {
      "default": 140000,
      "type": "integer",
-     "description": "Request timeout in milliseconds (1000\u00e2\u0080\u0093140000, default 140000)."
+     "description": "Request timeout in milliseconds (1000\u2013140000, default 140000)."
     },
     "device": {
      "default": "desktop",
@@ -1077,7 +1077,7 @@
  },
  {
   "name": "get_walmart_search_results",
-  "description": "Scrape Walmart search results using ScrapingBee.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "description": "Scrape Walmart search results using ScrapingBee.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u2014\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -1178,7 +1178,7 @@
  },
  {
   "name": "get_walmart_product_details",
-  "description": "Scrape Walmart product details using ScrapingBee.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "description": "Scrape Walmart product details using ScrapingBee.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u2014\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -1235,7 +1235,7 @@
  },
  {
   "name": "get_youtube_search_results",
-  "description": "Search YouTube and return structured results.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "description": "Search YouTube and return structured results.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u2014\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -1332,7 +1332,7 @@
  },
  {
   "name": "get_youtube_video_metadata",
-  "description": "Fetch structured metadata for a YouTube video including title, description,\nviews, likes, channel info, and technical details.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "description": "Fetch structured metadata for a YouTube video including title, description,\nviews, likes, channel info, and technical details.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u2014\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {
@@ -1349,7 +1349,7 @@
  },
  {
   "name": "get_youtube_video_subtitles",
-  "description": "Retrieve subtitles for one YouTube video.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u00e2\u0080\u0094\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
+  "description": "Retrieve subtitles for one YouTube video.\n\nScope: one query per call. To run many queries in one pass, or to write\nresults to disk instead of into the conversation, use the ScrapingBee CLI \u2014\n`scrapingbee <command> --input-file queries.txt --output-dir results`.",
   "inputSchema": {
    "additionalProperties": false,
    "properties": {

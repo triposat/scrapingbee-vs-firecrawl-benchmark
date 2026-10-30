@@ -54,12 +54,16 @@ with open(args.urls) as f:
         samples[domain].append((usable, int(response.headers.get("Spb-cost", 0) or 0),
                                 int(response.headers.get("Spb-auto-cost", 0) or 0)))
 
-total = 0
+total, skipped = 0, []
 print(f"{'domain':28} {'sampled':>7} {'usable':>6} {'tiers seen':>10} {'credits/usable':>14} {'pages/month':>11} {'credits/month':>13}")
 for domain, rows in samples.items():
     usable = [r for r in rows if r[0]]
     charged = sum(r[1] for r in rows)
-    per_page = charged / len(usable) if usable else 0
+    if not usable:
+        skipped.append(domain)
+        print(f"{domain:28} {len(rows):7} {0:6} {'-':>10} {'-':>14} {volume[domain]:11,} {'not projected':>13}")
+        continue
+    per_page = charged / len(usable)
     credits = round(per_page * volume[domain])
     total += credits
     seen = f"{min(r[2] for r in usable)}-{max(r[2] for r in usable)}" if usable else "-"
@@ -69,6 +73,8 @@ for domain, rows in samples.items():
         print(f"{'':28} {len(rows) - len(usable)} unusable sample(s), {unbilled} of them not billed")
 
 print(f"\nEstimated credits a month: {total:,}")
+if skipped:
+    print(f"Not included: {', '.join(skipped)} (no usable sample, so no cost per page to project)")
 fits = [p for p in PLANS if p[2] >= total]
 if fits:
     name, price, credits = fits[0]
