@@ -304,7 +304,7 @@
   "bytes": 457381,
   "jsonld_prices": [],
   "nextdata_price": null,
-  "note": "first-match regex bug; corrected values in structured-price-scan-walmart.json"
+  "note": "nextdata_price here is the first price in the page data, not always the product's own. Use structured-price-scan-walmart.json for Walmart's product price."
  },
  {
   "id": "protected-walmart-2",
@@ -315,7 +315,7 @@
   "bytes": 562652,
   "jsonld_prices": [],
   "nextdata_price": null,
-  "note": "first-match regex bug; corrected values in structured-price-scan-walmart.json"
+  "note": "nextdata_price here is the first price in the page data, not always the product's own. Use structured-price-scan-walmart.json for Walmart's product price."
  },
  {
   "id": "protected-walmart-3",
@@ -326,7 +326,7 @@
   "bytes": 501634,
   "jsonld_prices": [],
   "nextdata_price": null,
-  "note": "first-match regex bug; corrected values in structured-price-scan-walmart.json"
+  "note": "nextdata_price here is the first price in the page data, not always the product's own. Use structured-price-scan-walmart.json for Walmart's product price."
  },
  {
   "id": "protected-walmart-4",
@@ -337,7 +337,7 @@
   "bytes": 431479,
   "jsonld_prices": [],
   "nextdata_price": null,
-  "note": "first-match regex bug; corrected values in structured-price-scan-walmart.json"
+  "note": "nextdata_price here is the first price in the page data, not always the product's own. Use structured-price-scan-walmart.json for Walmart's product price."
  },
  {
   "id": "protected-walmart-5",
@@ -348,6 +348,6 @@
   "bytes": 430448,
   "jsonld_prices": [],
   "nextdata_price": null,
-  "note": "first-match regex bug; corrected values in structured-price-scan-walmart.json"
+  "note": "nextdata_price here is the first price in the page data, not always the product's own. Use structured-price-scan-walmart.json for Walmart's product price."
  }
 ]

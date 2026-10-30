@@ -1,6 +1,5 @@
 """The article's chart from aggregate.json: cost per 1,000 successful pages ($19 plans), by page type.
-Bars carry their values, so there is no y-axis text or grid. Rendered at 2x for high-density screens,
-on a narrow canvas so the labels stay readable at phone width (about 11 px at 343 px wide)."""
+Bars carry their values, so there is no y-axis text or grid. Rendered at 2x."""
 import json
 import matplotlib
 matplotlib.use("Agg")
